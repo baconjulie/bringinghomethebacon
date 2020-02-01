@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Events = () => (
   <div>
@@ -37,6 +38,8 @@ const Events = () => (
         <li>Around Danverse</li>
       </ul>
     </div>
+
+    <Footer />
   </div>
 );
 
