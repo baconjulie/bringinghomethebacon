@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import React from 'react'
 import Link from 'next/link'
 
@@ -6,16 +7,16 @@ const links = [
   { href: '/events', label: 'Events' },
   { href: '/wedding-party', label: 'Wedding Party' },
   { href: '/registry', label: 'Registry' },
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+].map((link) => {
+  link.key = `nav-link-${link.href}-${link.label}`;
+  return link;
+});
 
 const Nav = () => (
   <nav>
     <ul>
       <li>
-        <Link href='/'>
+        <Link href="/">
           <a>Home</a>
         </Link>
       </li>
@@ -26,7 +27,8 @@ const Nav = () => (
       ))}
     </ul>
 
-    <style jsx>{`
+    <style jsx>
+      {`
       :global(body) {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
@@ -51,8 +53,9 @@ const Nav = () => (
         text-decoration: none;
         font-size: 13px;
       }
-    `}</style>
+    `}
+    </style>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;
