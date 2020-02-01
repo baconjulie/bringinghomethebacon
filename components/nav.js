@@ -1,13 +1,13 @@
 /* eslint-disable no-param-reassign */
-import React from 'react'
-import Link from 'next/link'
+import React from "react";
+import Link from "next/link";
 
 const links = [
-  { href: '/our-story', label: 'Our Story' },
-  { href: '/events', label: 'Events' },
-  { href: '/wedding-party', label: 'Wedding Party' },
-  { href: '/registry', label: 'Registry' },
-].map((link) => {
+  { href: "/our-story", label: "Our Story" },
+  { href: "/events", label: "Events" },
+  { href: "/wedding-party", label: "Wedding Party" },
+  { href: "/registry", label: "Registry" }
+].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
 });
@@ -29,31 +29,38 @@ const Nav = () => (
 
     <style jsx>
       {`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}
+        :global(body) {
+          margin: 0;
+          font-family: "Raleway", Avenir Next, Avenir, Helvetica, sans-serif;
+          --primary: #88b378;
+          --secondary: green;
+          --white: #fff;
+          --black: #000;
+        }
+        nav {
+          text-align: center;
+          background-color: var(--primary);
+          padding: 1rem 4rem;
+          opacity: 0.75;
+        }
+        ul {
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+        }
+        nav > ul {
+          padding: 0;
+        }
+        li {
+          display: flex;
+          padding: 0;
+        }
+        a {
+          color: var(--white);
+          text-decoration: none;
+          font-size: 16px;
+        }
+      `}
     </style>
   </nav>
 );

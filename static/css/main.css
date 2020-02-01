@@ -1,0 +1,12 @@
+@font-face {
+  font-family: WildYouth;
+  src: url("../fonts/WildYouth.otf") format("opentype");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+
+  --primary: brown;
+  --secondary: green;
+}
