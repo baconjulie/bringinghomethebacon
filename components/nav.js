@@ -38,7 +38,6 @@ const Nav = () => (
           --black: #000;
         }
         nav {
-          text-align: center;
           background-color: var(--primary);
           padding: 1rem 4rem;
           opacity: 0.75;

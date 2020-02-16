@@ -3,10 +3,32 @@
   src: url("../fonts/WildYouth.otf") format("opentype");
 }
 
+:root {
+  --primary: #88b378;
+  --secondary: green;
+  --white: #fff;
+  --black: #000;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
 
   --primary: brown;
   --secondary: green;
+}
+
+.subhead {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-family: "WildYouth";
+}
+
+.detail-lg {
+  font-size: 40px;
+}
+
+.detail-sm {
+  font-size: 28px;
 }
