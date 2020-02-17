@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Nav from "../components/nav";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
 
 const Home = () => (
   <div>
@@ -16,47 +15,45 @@ const Home = () => (
       ></link>
     </Head>
 
-    <Nav />
-
-    <section className="hero">
-      <h1 className="title">Save the Date</h1>
-      <p className="description">May 29th, 2021. | Danverse, MA</p>
-      <p>Please join us for an enchanted evening at Glen Magna Farms.</p>
-    </section>
-    <section className="ceremony grid">
-      <div className="row">
-        <div className="col-sm-12 col-md-6 ceremony-info">
-          <h3 className="subhead">Ceremony</h3>
-          <div className="detail-lg">4:00 PM</div>
-          <div className="detail-sm">
-            Glen Magna Farms <br />
-            29 Ingersoll St <br />
-            Danvers, MA 01923
+    <Layout>
+      <section className="hero">
+        <h1 className="title">Save the Date</h1>
+        <p className="description">May 29th, 2021. | Danverse, MA</p>
+        <p>Please join us for an enchanted evening at Glen Magna Farms.</p>
+      </section>
+      <section className="ceremony grid">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 ceremony-info">
+            <h3 className="subhead">Ceremony</h3>
+            <div className="detail-lg">4:00 PM</div>
+            <div className="detail-sm">
+              Glen Magna Farms <br />
+              29 Ingersoll St <br />
+              Danvers, MA 01923
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 img-wrapper">
+            <div className="ceremony-img" />
           </div>
         </div>
-        <div className="col-sm-12 col-md-6 img-wrapper">
-          <div className="ceremony-img" />
-        </div>
-      </div>
-    </section>
-    <section className="reception grid">
-      <div className="row">
-        <div className="col-sm-12 col-md-6 img-wrapper">
-          <div className="reception-img" />
-        </div>
-        <div className="col-sm-12 col-md-6 reception-info">
-          <h3 className="subhead">Reception</h3>
-          <div className="detail-lg">4:30 PM - 10:00 PM</div>
-          <div className="detail-sm">
-            Cocktail hour, dinner &amp; dancing will
-            <br />
-            continue at the Mansion + Garden grounds
+      </section>
+      <section className="reception grid">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 img-wrapper">
+            <div className="reception-img" />
+          </div>
+          <div className="col-sm-12 col-md-6 reception-info">
+            <h3 className="subhead">Reception</h3>
+            <div className="detail-lg">4:30 PM - 10:00 PM</div>
+            <div className="detail-sm">
+              Cocktail hour, dinner &amp; dancing will
+              <br />
+              continue at the Mansion + Garden grounds
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <Footer />
+      </section>
+    </Layout>
 
     <style jsx>{`
       .hero {

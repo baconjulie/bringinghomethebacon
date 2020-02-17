@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Nav from "../components/nav";
+import Layout from "../components/layout";
 
 const OurStory = () => (
   <div>
@@ -9,11 +9,11 @@ const OurStory = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Nav />
-
-    <div className="hero">
-      <h1 className="title">Our Story</h1>
-    </div>
+    <Layout>
+      <div className="hero">
+        <h1 className="title">Our Story</h1>
+      </div>
+    </Layout>
   </div>
 );
 

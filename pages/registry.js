@@ -1,6 +1,6 @@
-import React from 'react';
-import Head from 'next/head';
-import Nav from '../components/nav';
+import React from "react";
+import Head from "next/head";
+import Layout from "../components/layout";
 
 const Registry = () => (
   <div>
@@ -9,11 +9,11 @@ const Registry = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Nav />
-
-    <div className="hero">
-      <h1 className="title">Registry</h1>
-    </div>
+    <Layout>
+      <div className="hero">
+        <h1 className="title">Registry</h1>
+      </div>
+    </Layout>
   </div>
 );
 

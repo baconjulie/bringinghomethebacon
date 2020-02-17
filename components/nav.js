@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 import React from "react";
+import Link from "next/link";
 
 const links = [
   { href: "/our-story", label: "Our Story" },
@@ -17,13 +18,15 @@ const Nav = () => (
     <ul>
       {links.map(({ key, href, label }) => (
         <li key={key}>
-          <a href={href}>
-            {label === "branding" ? (
-              <img src="/leaves.jpeg" className="logo" />
-            ) : (
-              label
-            )}
-          </a>
+          <Link href={href}>
+            <a>
+              {label === "branding" ? (
+                <img src="/leaves.jpeg" className="logo" />
+              ) : (
+                label
+              )}
+            </a>
+          </Link>
         </li>
       ))}
     </ul>
