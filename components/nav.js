@@ -1,10 +1,10 @@
 /* eslint-disable no-param-reassign */
 import React from "react";
-import Link from "next/link";
 
 const links = [
   { href: "/our-story", label: "Our Story" },
   { href: "/events", label: "Events" },
+  { href: "/", label: "branding" },
   { href: "/wedding-party", label: "Wedding Party" },
   { href: "/registry", label: "Registry" }
 ].map(link => {
@@ -15,14 +15,15 @@ const links = [
 const Nav = () => (
   <nav>
     <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
       {links.map(({ key, href, label }) => (
         <li key={key}>
-          <a href={href}>{label}</a>
+          <a href={href}>
+            {label === "branding" ? (
+              <img src="/leaves.jpeg" className="logo" />
+            ) : (
+              label
+            )}
+          </a>
         </li>
       ))}
     </ul>
@@ -38,14 +39,17 @@ const Nav = () => (
           --black: #000;
         }
         nav {
-          background-color: var(--primary);
+          background-color: rgba(0, 0, 0, 0.2);
           padding: 1rem 4rem;
           opacity: 0.75;
+          position: sticky;
+          top: 0;
         }
         ul {
           margin: 0;
           display: flex;
           justify-content: space-between;
+          align-items: center;
         }
         nav > ul {
           padding: 0;
@@ -58,6 +62,9 @@ const Nav = () => (
           color: var(--white);
           text-decoration: none;
           font-size: 16px;
+        }
+        .logo {
+          width: 75px;
         }
       `}
     </style>

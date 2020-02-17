@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Nav from "../components/nav";
+import Footer from "../components/footer";
 
 const Home = () => (
   <div>
@@ -24,7 +25,7 @@ const Home = () => (
     </section>
     <section className="ceremony grid">
       <div className="row">
-        <div className="col-sm-12 col-lg-6 ceremony-info">
+        <div className="col-sm-12 col-md-6 ceremony-info">
           <h3 className="subhead">Ceremony</h3>
           <div className="detail-lg">4:00 PM</div>
           <div className="detail-sm">
@@ -33,39 +34,40 @@ const Home = () => (
             Danvers, MA 01923
           </div>
         </div>
-        <div className="col-sm-12 col-lg-6">
+        <div className="col-sm-12 col-md-6 img-wrapper">
           <div className="ceremony-img" />
         </div>
       </div>
     </section>
     <section className="reception grid">
       <div className="row">
-        <div className="col-sm-12 col-lg-6">
+        <div className="col-sm-12 col-md-6 img-wrapper">
           <div className="reception-img" />
         </div>
-        <div className="col-sm-12 col-lg-6 reception-info">
+        <div className="col-sm-12 col-md-6 reception-info">
           <h3 className="subhead">Reception</h3>
           <div className="detail-lg">4:30 PM - 10:00 PM</div>
           <div className="detail-sm">
-            Cocktail hour, dinner & dancing
+            Cocktail hour, dinner &amp; dancing will
             <br />
-            will continue at the Mansion + Garden grounds
+            continue at the Mansion + Garden grounds
           </div>
         </div>
       </div>
     </section>
+
+    <Footer />
 
     <style jsx>{`
       .hero {
         width: 100%;
         height: 100vh;
         min-height: 800px;
-        background-image: url("/hiking.jpg");
+        background-image: url("/blue-ridge.jpeg");
         background-size: cover;
         background-position: center;
         color: var(--white);
         text-align: center;
-        margin-top: -60px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -79,12 +81,13 @@ const Home = () => (
       }
       .ceremony,
       .reception {
-        padding: 2rem;
+        padding: 3rem;
       }
       .ceremony-info,
       .reception-info {
         text-align: center;
-        height: 500px;
+        height: 300px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -94,14 +97,29 @@ const Home = () => (
       .reception-img {
         background-size: cover;
         background-repeat: no-repeat;
+        height: 400px;
         width: 100%;
-        height: 100%;
       }
       .ceremony-img {
         background-image: url("/bpg.jpg");
       }
       .reception-img {
         background-image: url("/bpg2.jpg");
+      }
+      @media only screen and (min-width: 992px) {
+        .ceremony-info,
+        .reception-info {
+          height: 500px;
+        }
+        .ceremony-img,
+        .reception-img {
+          height: 100%;
+        }
+      }
+      @media only screen and (max-width: 991px) {
+        .img-wrapper {
+          width: 100%;
+        }
       }
     `}</style>
   </div>

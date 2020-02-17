@@ -22,29 +22,26 @@ const Footer = () => (
 
     <style jsx>
       {`
-        :global(body) {
+        footer {
+          background-color: rgba(0, 0, 0, 0.35);
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-            Helvetica, sans-serif;
-        }
-        nav {
-          text-align: center;
+          height: 100px;
         }
         ul {
           display: flex;
+          align-items: center;
           justify-content: space-between;
-        }
-        nav > ul {
-          padding: 4px 16px;
+          height: 100%;
+          margin: 0;
         }
         li {
           display: flex;
-          padding: 6px 8px;
+          justify-content: space-between;
         }
         a {
-          color: #067df7;
+          color: var(--white);
           text-decoration: none;
-          font-size: 13px;
+          font-size: 16px;
         }
       `}
     </style>
