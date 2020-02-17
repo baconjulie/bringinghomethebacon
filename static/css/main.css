@@ -27,8 +27,76 @@ body {
 
 .detail-lg {
   font-size: 40px;
+  font-family: georgia;
+  font-weight: bold;
+  line-height: 1.75;
+  margin-top: 1rem;
 }
 
 .detail-sm {
-  font-size: 28px;
+  font-size: 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Save the Date hero animation */
+.fade1 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s;
+  animation-fill-mode: forwards;
+}
+.fade2 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 2s;
+  animation-fill-mode: forwards;
+}
+.fade3 {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 3s;
+  animation-fill-mode: forwards;
+}
+
+/* Date & Location hero animation */
+.fadeDown {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: fadeDown 3s ease-in-out 4s;
+  animation-fill-mode: forwards;
+}
+
+/* Tagline hero animation */
+.fadeUp {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 3s ease-in-out 4s;
+  animation-fill-mode: forwards;
 }

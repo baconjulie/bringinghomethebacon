@@ -17,9 +17,17 @@ const Home = () => (
 
     <Layout>
       <section className="hero">
-        <h1 className="title">Save the Date</h1>
-        <p className="description">May 29th, 2021. | Danverse, MA</p>
-        <p>Please join us for an enchanted evening at Glen Magna Farms.</p>
+        <h1 className="title">
+          <span className="fade1">Save</span>&nbsp;
+          <span className="fade2">the</span>&nbsp;
+          <span className="fade3">Date</span>
+        </h1>
+        <p className="description fadeDown" style={{ marginTop: "2rem" }}>
+          May 29th, 2021 | Danvers, MA
+        </p>
+        <p className="tagline fadeUp">
+          Please join us for an enchanted evening at Glen Magna Farms
+        </p>
       </section>
       <section className="ceremony grid">
         <div className="row">
@@ -31,6 +39,13 @@ const Home = () => (
               29 Ingersoll St <br />
               Danvers, MA 01923
             </div>
+            <a
+              className="map-link"
+              target="_blank"
+              href="https://www.google.com/maps/place/Glen+Magna+Farms/@42.5734774,-70.9688008,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3118fe3ac3f11:0xd66e146dcd974822!8m2!3d42.5734774!4d-70.9666121"
+            >
+              Map
+            </a>
           </div>
           <div className="col-sm-12 col-md-6 img-wrapper">
             <div className="ceremony-img" />
@@ -69,12 +84,30 @@ const Home = () => (
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: -100px;
       }
       .title {
         margin: 0;
         line-height: 1.15;
         font-size: 80px;
         font-family: "WildYouth";
+      }
+      .description {
+        margin: 0;
+      }
+      .tagline {
+        margin: 1rem 0 0 0;
+        font-size: 20px;
+        font-style: italic;
+      }
+      .map-link {
+        text-decoration: none;
+        font-size: 24px;
+        font-family: georgia;
+        color: black;
+        border-bottom: 2px solid black;
+        padding-bottom: 6px;
+        margin-top: 1rem;
       }
       .ceremony,
       .reception {

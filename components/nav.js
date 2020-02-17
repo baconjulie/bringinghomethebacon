@@ -43,10 +43,14 @@ const Nav = () => (
         }
         nav {
           background-color: rgba(0, 0, 0, 0.2);
-          padding: 1rem 4rem;
+          padding: 0rem 4rem;
+          height: 100px;
           opacity: 0.75;
           position: sticky;
           top: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
         }
         ul {
           margin: 0;
@@ -67,7 +71,7 @@ const Nav = () => (
           font-size: 16px;
         }
         .logo {
-          width: 75px;
+          width: 50px;
         }
       `}
     </style>
