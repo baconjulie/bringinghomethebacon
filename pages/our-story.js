@@ -11,30 +11,32 @@ const OurStory = () => (
         <img src="/eucalyptusbouquet.png" className="eucalyptus" />
         <section className="ceremony grid">
           <div className="row center-xs">
-            <div className="col-sm-12 col-md-5 ceremony-info">
-              <Headline>Our Story</Headline>
-              <Detail size="lg">lorem</Detail>
+            <div className="col-sm-12 col-md-6 ceremony-info">
+              <Headline>Let Love Grow</Headline>
+              <Detail size="lg">Our Story</Detail>
               <Detail size="sm">
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  We met the summer of 2014 at our summer internships in Boston.
+                  Our first date was just a couple of days before Alex was
+                  headed back to New York to finish up senior year. Off the bat,
+                  it was obvious that our love was strong, real and too perfect
+                  to let go. We soon found each other on the Greyhound bus route
+                  from Boston ➡️ NYC every other weekend to be together.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. Duis
-                  autem vel eum iriure dolor in hendrerit in vulputate velit
-                  esse molestie consequat, vel illum dolore.
+                  After graduation, Julie headed off to San Francisco and Alex
+                  to Washington, DC both starting their big post-grad jobs. But
+                  soon we found ourselves flying across the country every month
+                  ✈️. So much joy and anticipation would accompany teary eyed
+                  airport "see you laters", but we always made it work.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                  aliquam erat volutpat.
+                  Julie moved to DC one year later, and it was the best decision
+                  we've ever made. Every day we cherish the small things like
+                  cooking, hiking, camping and just being together. We couldn't
+                  be more excited to share our love with our closest friends and
+                  family with an intimate celebration in our favorite
+                  place--nature!
                 </p>
               </Detail>
             </div>
@@ -46,12 +48,22 @@ const OurStory = () => (
       .eucalyptus {
         display: none;
       }
+      p {
+        margin-bottom: 2rem;
+        line-height: 1.5;
+        font-size: 18px;
+      }
       @media only screen and (min-width: 992px) {
         .eucalyptus {
           display: block;
           position: absolute;
           left: -300px;
           top: 150px;
+        }
+        p {
+          margin-bottom: 2rem;
+          line-height: 1.5;
+          font-size: 20px;
         }
       }
     `}</style>

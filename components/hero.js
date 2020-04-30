@@ -17,7 +17,6 @@ const Hero = ({ children, imgUrl }) => (
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: -100px;
       }
     `}</style>
   </Fragment>

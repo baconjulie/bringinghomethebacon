@@ -14,8 +14,9 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 28px;
 
-  --primary: brown;
-  --secondary: green;
+  --primary: #9e6381;
+  --secondary: #b785a9;
+  --tertiary: #673046;
 }
 
 @keyframes fadeIn {

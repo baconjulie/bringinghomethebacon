@@ -14,6 +14,10 @@ const Layout = ({ children, title = "DA BACON" }) => (
         href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap"
+        rel="stylesheet"
+      ></link>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
