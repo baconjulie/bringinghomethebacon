@@ -18,8 +18,8 @@ const Home = () => (
         </p>
       </section>
       <section className="ceremony grid">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 ceremony-info">
+        <div className="row center-xs">
+          <div className="col-sm-12 col-md-5 ceremony-info">
             <h3 className="subhead">Ceremony</h3>
             <div className="detail-lg">4:00 PM</div>
             <div className="detail-sm">
@@ -35,17 +35,21 @@ const Home = () => (
               Map
             </a>
           </div>
-          <div className="col-sm-12 col-md-6 img-wrapper">
-            <div className="ceremony-img" />
+          <div className="col-sm-12 col-md-5 img-wrapper">
+            <div className="ceremony-img">
+              <div className="frame ceremony-frame" />
+            </div>
           </div>
         </div>
       </section>
       <section className="reception grid">
-        <div className="row">
-          <div className="col-sm-12 col-md-6 img-wrapper">
-            <div className="reception-img" />
+        <div className="row center-xs">
+          <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
+            <div className="reception-img">
+              <div className="frame reception-frame" />
+            </div>
           </div>
-          <div className="col-sm-12 col-md-6 reception-info">
+          <div className="col-sm-12 col-md-5 reception-info">
             <h3 className="subhead">Reception</h3>
             <div className="detail-lg">4:30 PM - 10:00 PM</div>
             <div className="detail-sm">
@@ -113,16 +117,37 @@ const Home = () => (
       }
       .ceremony-img,
       .reception-img {
+        position: relative;
         background-size: cover;
         background-repeat: no-repeat;
         height: 400px;
-        width: 100%;
+        width: 400px;
       }
       .ceremony-img {
         background-image: url("/bpg.jpg");
       }
       .reception-img {
         background-image: url("/bpg2.jpg");
+      }
+      .frame {
+        position: absolute;
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+        border: 3px solid black;
+        transition: all 300ms ease-in-out;
+      }
+      .frame:hover {
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      .ceremony-frame {
+        top: 10px;
+        left: 20px;
+      }
+      .reception-frame {
+        top: -15px;
+        left: 25px;
       }
       @media only screen and (min-width: 992px) {
         .ceremony-info,
