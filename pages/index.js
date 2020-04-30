@@ -1,32 +1,36 @@
 import React, { Fragment } from "react";
 import Layout from "../components/layout";
+import Hero from "../components/hero";
+import Headline from "../components/type/headline";
+import Subhead from "../components/type/subhead";
+import Detail from "../components/type/detail";
 
 const Home = () => (
   <Fragment>
     <Layout title="Bringing Home the Bacon">
-      <section className="hero">
-        <h1 className="title">
+      <Hero imgUrl="/blue-ridge.jpeg">
+        <Headline>
           <span className="fade1">Save</span>&nbsp;
           <span className="fade2">the</span>&nbsp;
           <span className="fade3">Date</span>
-        </h1>
+        </Headline>
         <p className="description fadeDown" style={{ marginTop: "2rem" }}>
           May 29th, 2021 | Danvers, MA
         </p>
         <p className="tagline fadeUp">
           A Garden Celebration at Glen Magna Farms
         </p>
-      </section>
+      </Hero>
       <section className="ceremony grid">
         <div className="row center-xs">
           <div className="col-sm-12 col-md-5 ceremony-info">
-            <h3 className="subhead">Ceremony</h3>
-            <div className="detail-lg">4:00 PM</div>
-            <div className="detail-sm">
+            <Subhead>Ceremony</Subhead>
+            <Detail size="lg">4:00 PM</Detail>
+            <Detail size="sm">
               Glen Magna Farms <br />
               29 Ingersoll St <br />
               Danvers, MA 01923
-            </div>
+            </Detail>
             <a
               className="map-link"
               target="_blank"
@@ -50,40 +54,19 @@ const Home = () => (
             </div>
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
-            <h3 className="subhead">Reception</h3>
-            <div className="detail-lg">4:30 PM - 10:00 PM</div>
-            <div className="detail-sm">
+            <Subhead>Reception</Subhead>
+            <Detail size="lg">4:30 PM - 10:00 PM</Detail>
+            <Detail size="sm">
               Cocktail hour, dinner &amp; dancing will
               <br />
               continue at the Mansion + Garden grounds
-            </div>
+            </Detail>
           </div>
         </div>
       </section>
     </Layout>
 
     <style jsx>{`
-      .hero {
-        width: 100%;
-        height: 100vh;
-        min-height: 800px;
-        background-image: url("/blue-ridge.jpeg");
-        background-size: cover;
-        background-position: center;
-        color: var(--white);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: -100px;
-      }
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 80px;
-        font-family: "WildYouth";
-      }
       .description {
         margin: 0;
       }
