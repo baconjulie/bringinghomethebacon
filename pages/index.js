@@ -14,7 +14,7 @@ const Home = () => (
           May 29th, 2021 | Danvers, MA
         </p>
         <p className="tagline fadeUp">
-          Please join us for an enchanted evening at Glen Magna Farms
+          A Garden Celebration at Glen Magna Farms
         </p>
       </section>
       <section className="ceremony grid">
@@ -88,9 +88,10 @@ const Home = () => (
         margin: 0;
       }
       .tagline {
-        margin: 1rem 0 0 0;
+        margin: 0.5rem 0 0 0;
         font-size: 20px;
         font-style: italic;
+        font-family: Franklin;
       }
       .map-link {
         text-decoration: none;
