@@ -16,7 +16,7 @@ const Home = () => (
           <span className="fade2">the</span>&nbsp;
           <span className="fade3">
             Date
-            <Vine width="90" fill="white" className="icon" />
+            <Vine width="80" fill="white" className="vine-icon" />
           </span>
         </Headline>
         <p className="description fadeDown" style={{ marginTop: "2rem" }}>
@@ -74,10 +74,11 @@ const Home = () => (
     <style jsx>{`
       .description {
         margin: 0;
+        font-size: 36px;
       }
       .tagline {
         margin: 0.5rem 0 0 0;
-        font-size: 20px;
+        font-size: 24px;
         font-style: italic;
         font-family: Franklin;
       }

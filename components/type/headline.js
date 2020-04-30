@@ -7,7 +7,7 @@ const Headline = props => (
       .headline {
         margin: 0;
         line-height: 1.15;
-        font-size: 30px;
+        font-size: 36px;
         font-family: "WildYouth";
       }
       @media only screen and (min-width: 992px) {
