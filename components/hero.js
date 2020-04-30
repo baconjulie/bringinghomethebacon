@@ -9,7 +9,6 @@ const Hero = ({ children, imgUrl }) => (
       .hero {
         width: 100%;
         height: 100vh;
-        min-height: 800px;
         background-size: cover;
         background-position: center;
         color: var(--white);

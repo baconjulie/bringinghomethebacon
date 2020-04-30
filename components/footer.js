@@ -15,7 +15,7 @@ const Footer = () => (
       </li>
       <li>
         <a href="https://github.com/baconjulie/bringinghomethebacon">
-          Made with love on Github
+          Made With 💛On Github
         </a>
       </li>
     </ul>
@@ -23,25 +23,36 @@ const Footer = () => (
     <style jsx>
       {`
         footer {
-          background-color: rgba(0, 0, 0, 0.35);
+          background-color: rgba(0, 0, 0, 0.85);
           margin: 0;
-          height: 100px;
         }
         ul {
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: space-between;
           height: 100%;
           margin: 0;
+          padding: 1rem;
         }
         li {
           display: flex;
           justify-content: space-between;
+          padding: 1rem;
         }
         a {
           color: var(--white);
           text-decoration: none;
           font-size: 16px;
+        }
+        @media only screen and (min-width: 992px) {
+          ul {
+            flex-direction: row;
+            padding: 2rem 4rem;
+          }
+          li {
+            padding: 0.5rem;
+          }
         }
       `}
     </style>

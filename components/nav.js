@@ -1,11 +1,12 @@
 /* eslint-disable no-param-reassign */
 import React from "react";
 import Link from "next/link";
+import Vine from "../components/icons/vine";
 
 const links = [
+  { href: "/", label: "branding" },
   { href: "/our-story", label: "Our Story" },
   { href: "/events", label: "Events" },
-  { href: "/", label: "branding" },
   { href: "/wedding-party", label: "Wedding Party" },
   { href: "/registry", label: "Registry" }
 ].map(link => {
@@ -20,11 +21,7 @@ const Nav = () => (
         <li key={key}>
           <Link href={href}>
             <a>
-              {label === "branding" ? (
-                <img src="/leaves.jpeg" className="logo" />
-              ) : (
-                label
-              )}
+              {label === "branding" ? <Vine width="60" fill="white" /> : label}
             </a>
           </Link>
         </li>

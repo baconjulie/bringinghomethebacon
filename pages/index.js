@@ -5,6 +5,7 @@ import Frame from "../components/frame";
 import Headline from "../components/type/headline";
 import Subhead from "../components/type/subhead";
 import Detail from "../components/type/detail";
+import Vine from "../components/icons/vine";
 
 const Home = () => (
   <Fragment>
@@ -13,7 +14,10 @@ const Home = () => (
         <Headline>
           <span className="fade1">Save</span>&nbsp;
           <span className="fade2">the</span>&nbsp;
-          <span className="fade3">Date</span>
+          <span className="fade3">
+            Date
+            <Vine width="90" fill="white" className="icon" />
+          </span>
         </Headline>
         <p className="description fadeDown" style={{ marginTop: "2rem" }}>
           May 29th, 2021 | Danvers, MA
@@ -105,8 +109,8 @@ const Home = () => (
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
       }
       .ceremony-img {
         background-image: url("/bpg.jpg");
@@ -124,9 +128,13 @@ const Home = () => (
           height: 100%;
         }
       }
-      @media only screen and (max-width: 991px) {
+      @media only screen and (min-width: 992px) {
         .img-wrapper {
           width: 100%;
+        }
+        .ceremony-img,
+        .reception-img {
+          width: 400px;
         }
       }
     `}</style>
