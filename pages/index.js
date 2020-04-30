@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
+import Frame from "../components/frame";
 import Headline from "../components/type/headline";
 import Subhead from "../components/type/subhead";
 import Detail from "../components/type/detail";
@@ -40,18 +41,18 @@ const Home = () => (
             </a>
           </div>
           <div className="col-sm-12 col-md-5 img-wrapper">
-            <div className="ceremony-img">
-              <div className="frame ceremony-frame" />
-            </div>
+            <Frame dir="right">
+              <div className="ceremony-img" />
+            </Frame>
           </div>
         </div>
       </section>
       <section className="reception grid">
         <div className="row center-xs">
           <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
-            <div className="reception-img">
-              <div className="frame reception-frame" />
-            </div>
+            <Frame dir="left">
+              <div className="reception-img" />
+            </Frame>
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
             <Subhead>Reception</Subhead>
@@ -112,26 +113,6 @@ const Home = () => (
       }
       .reception-img {
         background-image: url("/bpg2.jpg");
-      }
-      .frame {
-        position: absolute;
-        width: calc(100% - 3px);
-        height: calc(100% - 3px);
-        border: 3px solid black;
-        transition: all 300ms ease-in-out;
-      }
-      .frame:hover {
-        top: 0;
-        left: 0;
-        right: 0;
-      }
-      .ceremony-frame {
-        top: 10px;
-        left: 20px;
-      }
-      .reception-frame {
-        top: -15px;
-        left: 25px;
       }
       @media only screen and (min-width: 992px) {
         .ceremony-info,
