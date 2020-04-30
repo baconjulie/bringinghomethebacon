@@ -1,21 +1,9 @@
-import React from "react";
-import Head from "next/head";
+import React, { Fragment } from "react";
 import Layout from "../components/layout";
 
 const Home = () => (
-  <div>
-    <Head>
-      <title>Bringing Home the Bacon</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link href="/static/css/main.css" rel="stylesheet" />
-      <link href="/static/css/flexboxgrid.min.css" rel="stylesheet" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-        rel="stylesheet"
-      ></link>
-    </Head>
-
-    <Layout>
+  <Fragment>
+    <Layout title="Bringing Home the Bacon">
       <section className="hero">
         <h1 className="title">
           <span className="fade1">Save</span>&nbsp;
@@ -152,7 +140,7 @@ const Home = () => (
         }
       }
     `}</style>
-  </div>
+  </Fragment>
 );
 
 export default Home;

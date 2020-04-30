@@ -1,21 +1,9 @@
 import React from "react";
-import Head from "next/head";
 import Layout from "../components/layout";
 
 const Events = () => (
   <div>
-    <Head>
-      <title>Bringing Home the Bacon</title>
-      <link rel="icon" href="/favicon.ico" />
-      <link href="/static/css/main.css" rel="stylesheet" />
-      <link href="/static/css/flexboxgrid.min.css" rel="stylesheet" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-        rel="stylesheet"
-      ></link>
-    </Head>
-
-    <Layout>
+    <Layout title="Events">
       <div className="hero">
         <h1 className="title">Events</h1>
         <div className="grid">
