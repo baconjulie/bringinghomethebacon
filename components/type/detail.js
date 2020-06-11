@@ -1,14 +1,19 @@
 import React, { Fragment } from "react";
 
-const Detail = ({ children, size }) => (
+const Detail = ({ children, size, color = "black" }) => (
   <Fragment>
-    <p className={`detail detail-${size}`}>{children}</p>
+    <p className={`detail detail-${size} ${color}`}>{children}</p>
     <style jsx>{`
       .detail {
         margin: 0;
       }
+      .detail-xs {
+        font-size: 22px;
+        line-height: 1.4;
+      }
       .detail-sm {
         font-size: 24px;
+        line-height: 1.5;
       }
       .detail-lg {
         font-size: 40px;

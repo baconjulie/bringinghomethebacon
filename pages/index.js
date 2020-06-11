@@ -20,17 +20,16 @@ const Home = () => (
           </span>
         </Headline>
         <p className="description fadeDown" style={{ marginTop: "2rem" }}>
-          May 29th, 2021 | Danvers, MA
-        </p>
-        <p className="tagline fadeUp">
-          A Garden Celebration at Glen Magna Farms
+          05.29.2021 | Danvers, MA
         </p>
       </Hero>
       <section className="ceremony grid">
         <div className="row center-xs">
           <div className="col-sm-12 col-md-5 ceremony-info">
             <Subhead>Ceremony</Subhead>
-            <Detail size="lg">4:00 PM</Detail>
+            <Detail size="lg" color="purple">
+              4:00 PM
+            </Detail>
             <Detail size="sm">
               Glen Magna Farms <br />
               29 Ingersoll St <br />
@@ -60,7 +59,9 @@ const Home = () => (
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
             <Subhead>Reception</Subhead>
-            <Detail size="lg">4:30 PM - 10:00 PM</Detail>
+            <Detail size="lg" color="purple">
+              4:30 PM - 10:00 PM
+            </Detail>
             <Detail size="sm">
               Cocktail hour, dinner &amp; dancing will
               <br />
@@ -83,14 +84,26 @@ const Home = () => (
         font-family: Franklin;
       }
       .map-link {
+        background: linear-gradient(
+          to bottom,
+          var(--primary) 0%,
+          var(--primary) 100%
+        );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        color: #000;
         text-decoration: none;
-        font-size: 28px;
+        transition: all 0.2s;
         font-family: "AbrilFatFace";
-        color: black;
-        border-bottom: 2px solid black;
-        padding-bottom: 6px;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        font-size: 28px;
       }
+
+      .map-link:hover {
+        background-size: 4px 50px;
+      }
+
       .ceremony,
       .reception {
         padding: 3rem;

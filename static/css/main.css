@@ -87,3 +87,11 @@ body {
   animation: fadeUp 3s ease-in-out 4s;
   animation-fill-mode: forwards;
 }
+
+.black {
+  color: #000;
+}
+
+.purple {
+  color: var(--primary);
+}

@@ -12,8 +12,7 @@ const OurStory = () => (
         <section className="ceremony grid">
           <div className="row center-xs">
             <div className="col-sm-12 col-md-6 ceremony-info">
-              <Headline>Let Love Grow</Headline>
-              <Detail size="lg">Our Story</Detail>
+              <Headline>our story</Headline>
               <Detail size="sm">
                 <p>
                   We met the summer of 2014 at our summer internships in Boston.

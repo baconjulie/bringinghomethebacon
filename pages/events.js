@@ -9,7 +9,7 @@ const Events = () => (
   <div>
     <Layout title="Events">
       <section>
-        <Headline>Events</Headline>
+        <Headline>event details</Headline>
         <div className="grid">
           <div className="row center-xs">
             <div className="col-sm-12 col-md-4">
@@ -35,9 +35,7 @@ const Events = () => (
         </div>
         <div className="grid">
           <div className="row center-xs">
-            <div className="col-sm-12">
-              <Subhead>The Big Day</Subhead>
-            </div>
+            <div className="col-sm-12"></div>
             <div className="col-sm-12 col-md-4">
               <Detail size="lg">Ceremony</Detail>
               <Detail size="sm">
@@ -65,7 +63,7 @@ const Events = () => (
       <section>
         <div className="grid">
           <div className="row center-xs">
-            <div className="col-sm-12 col-md-6">
+            <div className="col-sm-12 col-md-8">
               <div style={{ marginBottom: "3rem" }}>
                 <Subhead>Hotel</Subhead>
                 <Detail size="lg">Courtyard Marriott</Detail>
@@ -80,8 +78,7 @@ const Events = () => (
                   Wedding" when booking!
                   <br />
                   <br />
-                  Shuttle information (where it picks up/drops off, how
-                  frequently runs)
+                  Shuttles will be provided to and from the wedding.
                 </Detail>
               </div>
               <div style={{ marginBottom: "3rem" }}>
@@ -100,11 +97,11 @@ const Events = () => (
                 </Detail>
               </div>
               <Subhead>Things to Do!</Subhead>
-              <Detail size="sm">
-                If you find you have some extra time to explore the area, we
-                thought we'd share our favorite Boston activities! Red Sox game
-                at Fenway, Boston Public Gardens, Seaport District, North End,
-                Trade Boston (our first date spot)
+              <Detail size="xs">
+                Boston has a very special place in our hearts. If you find you
+                have some extra time to explore the area, check out a Red Sox
+                game at Fenway, the Boston Public Gardens, Seaport District,
+                North End, and Trade Boston (our first date spot).
               </Detail>
             </div>
           </div>
