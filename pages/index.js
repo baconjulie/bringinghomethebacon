@@ -10,18 +10,20 @@ import Vine from "../components/icons/vine";
 const Home = () => (
   <Fragment>
     <Layout title="Bringing Home the Bacon">
-      <Hero imgUrl="/hero-bridge.jpg">
-        <Headline>
-          <span className="fade1">Save</span>&nbsp;
-          <span className="fade2">the</span>&nbsp;
-          <span className="fade3">
-            Date
-            <Vine width="80" fill="white" className="vine-icon" />
-          </span>
-        </Headline>
-        <p className="description fadeDown" style={{ marginTop: "2rem" }}>
-          05.29.2021 | Danvers, MA
-        </p>
+      <Hero imgUrl="/hero-bridge.jpg" style={{ position: "relative" }}>
+        <div className="hero-text">
+          <Headline>
+            <span className="fade1">Save</span>&nbsp;
+            <span className="fade2">the</span>&nbsp;
+            <span className="fade3">
+              Date
+              <Vine width="80" fill="white" className="vine-icon" />
+            </span>
+          </Headline>
+          <p className="description fadeDown" style={{ marginTop: "1rem" }}>
+            05.29.2021 | Danvers, MA
+          </p>
+        </div>
       </Hero>
       <section className="ceremony grid">
         <div className="row center-xs">
@@ -73,6 +75,10 @@ const Home = () => (
     </Layout>
 
     <style jsx>{`
+      .hero-text {
+        position: absolute;
+        top: 35%;
+      }
       .description {
         margin: 0;
         font-size: 36px;

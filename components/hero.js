@@ -8,7 +8,7 @@ const Hero = ({ children, imgUrl }) => (
     <style jsx>{`
       .hero {
         width: 100%;
-        height: 100vh;
+        height: calc(100vh - 133px);
         background-size: cover;
         background-position: center;
         color: var(--white);
