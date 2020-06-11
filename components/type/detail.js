@@ -12,7 +12,8 @@ const Detail = ({ children, size }) => (
       }
       .detail-lg {
         font-size: 40px;
-        font-family: georgia;
+        font-family: "AbrilFatFace";
+        letter-spacing: 2px;
         font-weight: bold;
         line-height: 1.75;
         margin-top: 1rem;

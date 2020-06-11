@@ -3,6 +3,11 @@
   src: url("../fonts/WildYouth.otf") format("opentype");
 }
 
+@font-face {
+  font-family: AbrilFatFace;
+  src: url("../fonts/AbrilFatface.ttf") format("truetype");
+}
+
 :root {
   --primary: #88b378;
   --secondary: green;

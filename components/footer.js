@@ -8,7 +8,7 @@ const Footer = () => (
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/events">Event Information</a>
+        <a href="/events">Event Details</a>
       </li>
       <li>
         <a href="/registry">Registry</a>

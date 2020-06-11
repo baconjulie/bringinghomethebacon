@@ -10,7 +10,7 @@ import Vine from "../components/icons/vine";
 const Home = () => (
   <Fragment>
     <Layout title="Bringing Home the Bacon">
-      <Hero imgUrl="/blue-ridge.jpeg">
+      <Hero imgUrl="/hero-bridge.jpg">
         <Headline>
           <span className="fade1">Save</span>&nbsp;
           <span className="fade2">the</span>&nbsp;
@@ -84,8 +84,8 @@ const Home = () => (
       }
       .map-link {
         text-decoration: none;
-        font-size: 24px;
-        font-family: georgia;
+        font-size: 28px;
+        font-family: "AbrilFatFace";
         color: black;
         border-bottom: 2px solid black;
         padding-bottom: 6px;
