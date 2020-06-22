@@ -133,7 +133,7 @@ const Home = () => (
         width: 300px;
       }
       .ceremony-img {
-        background-image: url("/bpg.jpg");
+        background-image: url("/wolfie.jpg");
       }
       .reception-img {
         background-image: url("/bpg2.jpg");

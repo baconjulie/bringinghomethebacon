@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Vine from "../components/icons/vine";
+import Menu from "../components/icons/menu";
 
 const links = [
   { href: "/our-story", label: "Our Story" },
@@ -14,8 +15,9 @@ const links = [
 
 const Nav = () => (
   <nav>
+    <Menu />
     <a href="/" className="names">
-      Julie <span className="ampersand">&</span> Alex
+      J<span className="ampersand">&</span>A
       <Vine width="40" fill="white" />
     </a>
     <ul>
@@ -39,8 +41,8 @@ const Nav = () => (
           --black: #000;
         }
         nav {
-          background-color: #fff;
-          padding: 1rem;
+          background-color: var(--white);
+          padding: 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -48,15 +50,16 @@ const Nav = () => (
         }
         .names {
           display: inline;
-          font-family: "AbrilFatFace";
-          font-size: 45px;
+          font-family: "WildYouth";
+          font-size: 35px;
           letter-spacing: 2px;
         }
         .ampersand {
           color: var(--primary);
+          font-family: "AbrilFatFace";
         }
         ul {
-          width: 650px;
+          width: 100%;
           margin: 0;
           padding-top: 2rem;
           display: flex;
@@ -89,6 +92,11 @@ const Nav = () => (
           text-decoration: none;
           font-size: 16px;
           letter-spacing: 1px;
+        }
+        @media only screen and (min-width: 992px) {
+          ul {
+            width: 650px;
+          }
         }
       `}
     </style>
