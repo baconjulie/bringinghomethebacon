@@ -47,7 +47,7 @@ const Home = () => (
           </div>
           <div className="col-sm-12 col-md-5 img-wrapper">
             <Frame dir="right">
-              <div className="ceremony-img" />
+              <img src="/gm1.jpg" className="img" />
             </Frame>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Home = () => (
         <div className="row center-xs">
           <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
             <Frame dir="left">
-              <div className="reception-img" />
+              <img src="/gm2.jpg" className="img" />
             </Frame>
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
@@ -114,47 +114,22 @@ const Home = () => (
       .reception {
         padding: 3rem;
       }
-      .ceremony-info,
-      .reception-info {
-        text-align: center;
-        height: 300px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .ceremony-img,
-      .reception-img {
+      .img {
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 300px;
         width: 300px;
       }
-      .ceremony-img {
-        background-image: url("/wolfie.jpg");
-      }
-      .reception-img {
-        background-image: url("/bpg2.jpg");
-      }
-      @media only screen and (min-width: 992px) {
-        .ceremony-info,
-        .reception-info {
-          height: 500px;
-        }
-        .ceremony-img,
-        .reception-img {
-          height: 100%;
-        }
-      }
-      @media only screen and (min-width: 992px) {
+
+      @media only screen and (min-width: 1024px) {
         .img-wrapper {
           width: 100%;
         }
+        .img {
+          position: relative;
+          width: 500px;
+        }
         .ceremony-img,
         .reception-img {
-          width: 400px;
+          width: 300px;
         }
       }
     `}</style>

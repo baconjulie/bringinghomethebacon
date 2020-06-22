@@ -11,6 +11,7 @@ const Frame = ({ children, dir }) => (
         position: relative;
         display: inline-block;
         height: 100%;
+        margin-top: 1rem;
       }
       .frame {
         position: absolute;

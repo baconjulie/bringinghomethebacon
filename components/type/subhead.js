@@ -7,7 +7,7 @@ const Subhead = props => (
       .subhead {
         margin: 0 0 1rem 0;
         line-height: 1.15;
-        font-size: 60px;
+        font-size: 48px;
         font-family: "WildYouth";
       }
     `}</style>

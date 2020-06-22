@@ -8,7 +8,7 @@ const Detail = ({ children, size, color = "black" }) => (
         margin: 0;
       }
       .detail-xs {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.4;
       }
       .detail-sm {
@@ -16,7 +16,7 @@ const Detail = ({ children, size, color = "black" }) => (
         line-height: 1.5;
       }
       .detail-lg {
-        font-size: 40px;
+        font-size: 35px;
         font-family: "AbrilFatFace";
         letter-spacing: 2px;
         font-weight: bold;
