@@ -3,21 +3,20 @@ import Layout from "../components/layout";
 import Headline from "../components/type/headline";
 import Subhead from "../components/type/subhead";
 import Detail from "../components/type/detail";
-import Frame from "../components/frame";
 
 const Events = () => (
   <div>
     <Layout title="Events">
-      <div className="center">
+      <div className="center" style={{ marginBottom: "2rem" }}>
         <Headline>getting there</Headline>
       </div>
       <section>
         <div className="grid">
           <div className="row center-xs">
             <div className="col-sm-12 col-md-8">
-              <div style={{ marginBottom: "3rem" }}>
-                <Subhead>Hotel</Subhead>
-                <Detail size="lg">Courtyard Marriott</Detail>
+              <div style={{ marginBottom: "4rem" }}>
+                <Subhead color="purple">Hotel</Subhead>
+                <Detail size="md">Courtyard Marriott</Detail>
                 <Detail size="xs">
                   275 Independence Way
                   <br />
@@ -29,9 +28,9 @@ const Events = () => (
                   Wedding" when booking!
                 </Detail>
               </div>
-              <div style={{ marginBottom: "3rem" }}>
-                <Subhead>Getting There</Subhead>
-                <Detail size="lg">Airport</Detail>
+              <div style={{ marginBottom: "4rem" }}>
+                <Subhead color="purple">Getting There</Subhead>
+                <Detail size="md">Airport</Detail>
                 <Detail size="xs">
                   Out of town guests can fly into{" "}
                   <a
@@ -43,7 +42,7 @@ const Events = () => (
                   . Danverse is about a 30 minute drive from the airport via
                   ride share or rental car.
                 </Detail>
-                <Detail size="lg">Taxis and Shuttle</Detail>
+                <Detail size="md">Taxis and Shuttle</Detail>
                 <Detail size="xs">
                   {" "}
                   The Marriott Courtyard is about a 30 minute drive from Logan
@@ -51,13 +50,15 @@ const Events = () => (
                   We will be providing a shuttle to and from the wedding.
                 </Detail>
               </div>
-              <Subhead>Things to Do!</Subhead>
-              <Detail size="xs">
-                Boston has a very special place in our hearts. If you find you
-                have some extra time to explore the area, check out a Red Sox
-                game at Fenway, the Boston Public Gardens, Seaport District,
-                North End, and Trade Boston (our first date spot).
-              </Detail>
+              <div style={{ marginBottom: "4rem" }}>
+                <Subhead color="purple">Things to Do!</Subhead>
+                <Detail size="xs">
+                  Boston has a very special place in our hearts. If you find you
+                  have some extra time to explore the area, check out a Red Sox
+                  game at Fenway, the Boston Public Gardens, Seaport District,
+                  North End, and Trade Boston (our first date spot).
+                </Detail>
+              </div>
             </div>
           </div>
         </div>
@@ -70,6 +71,9 @@ const Events = () => (
         }
         .center {
           text-align: center;
+        }
+        section {
+          margin: 4rem;
         }
       `}
     </style>

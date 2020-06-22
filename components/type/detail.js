@@ -15,6 +15,12 @@ const Detail = ({ children, size, color = "black" }) => (
         font-size: 24px;
         line-height: 1.5;
       }
+      .detail-md {
+        font-size: 30px;
+        font-family: "AbrilFatFace";
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
       .detail-lg {
         font-size: 35px;
         font-family: "AbrilFatFace";
