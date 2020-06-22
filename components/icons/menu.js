@@ -1,25 +1,18 @@
-import React, { useState } from "react";
+import React, { Fragment } from "react";
 
-const Menu = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const toggleMenu = () => {
-    setIsActive(!isActive);
-  };
-
+const Menu = props => {
+  const { isActive } = props;
   return (
-    <div
-      className={`hamburger hamburger--slider js-hamburger ${
-        isActive ? "active" : ""
-      }`}
-      onClick={toggleMenu}
-    >
-      <div className="hamburger-box">
-        <div className="hamburger-inner"></div>
+    <Fragment>
+      <div className={`menu ${isActive ? "active" : ""}`}>
+        <div className="menu-box">
+          <div className="menu-inner"></div>
+        </div>
       </div>
       <style jsx>
         {`
-          .hamburger {
+          .menu {
+            position: absolute;
             display: inline-block;
             padding: 15px;
             cursor: pointer;
@@ -27,16 +20,17 @@ const Menu = () => {
             transition-duration: 0.15s;
             transition-timing-function: linear;
             border: 0;
+            z-index: 3;
           }
-          .hamburger-box {
+          .menu-box {
             position: relative;
             display: inline-block;
             width: 40px;
             height: 24px;
           }
-          .hamburger-inner,
-          .hamburger-inner::before,
-          .hamburger-inner::after {
+          .menu-inner,
+          .menu-inner::before,
+          .menu-inner::after {
             position: absolute;
             width: 40px;
             height: 4px;
@@ -44,23 +38,38 @@ const Menu = () => {
             border-radius: 4px;
             background-color: var(--black);
           }
-          .hamburger-inner::before,
-          .hamburger-inner::after {
+          .menu-inner::before,
+          .menu-inner::after {
             display: block;
             content: "";
           }
-          .hamburger-inner::before {
+          .menu-inner::before {
             top: 10px;
             transition-property: transform, opacity;
             transition-duration: 0.15s;
             transition-timing-function: linear;
           }
-          .hamburger-inner::after {
+          .menu-inner::after {
             top: 20px;
+          }
+          .active .menu-inner {
+            transform: translate3d(0, 10px, 0) rotate(45deg);
+          }
+          .active .menu-inner::before {
+            opacity: 0;
+            transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+          }
+          .active .menu-inner::after {
+            transform: translate3d(0, -20px, 0) rotate(-90deg);
+          }
+          @media only screen and (min-width: 992px) {
+            .menu {
+              display: none;
+            }
           }
         `}
       </style>
-    </div>
+    </Fragment>
   );
 };
 
