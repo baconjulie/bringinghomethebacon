@@ -3,21 +3,22 @@ import React, { Fragment, useState } from "react";
 import Link from "next/link";
 import Menu from "../components/icons/menu";
 
-const links = [
-  { href: "/", label: "Wedding" },
-  { href: "/getting-there", label: "Getting There" },
-  { href: "/our-story", label: "Our Story" }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`;
-  return link;
-});
-
-const Nav = () => {
+const Nav = props => {
+  const { route } = props;
   const [isActive, setIsActive] = useState(false);
 
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
+
+  const links = [
+    { href: "/", label: "Wedding" },
+    { href: "/getting-there", label: "Getting There" },
+    { href: "/our-story", label: "Our Story" }
+  ].map(link => {
+    link.key = `nav-link-${link.href}-${link.label}`;
+    return link;
+  });
 
   return (
     <Fragment>
@@ -31,7 +32,7 @@ const Nav = () => {
         </a>
         <ul>
           {links.map(({ key, href, label }) => (
-            <li key={key}>
+            <li key={key} className={`${route === href ? "current" : ""}`}>
               <Link href={href}>
                 <a>{label}</a>
               </Link>
@@ -107,7 +108,8 @@ const Nav = () => {
             background: transparent;
             transition: width 500ms ease, background-color 500ms ease;
           }
-          li:hover:after {
+          li:hover:after,
+          li.current:after {
             width: 100%;
             background: var(--primary);
           }

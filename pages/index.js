@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Head from "next/head";
 import Layout from "../components/layout";
 import Hero from "../components/hero";
 import Frame from "../components/frame";
@@ -9,7 +10,10 @@ import Vine from "../components/icons/vine";
 
 const Home = () => (
   <Fragment>
-    <Layout title="Bringing Home the Bacon">
+    <Head>
+      <link rel="preload" href="/hero-bridge.jpg" as="image"></link>
+    </Head>
+    <Layout title="Bringing Home the Bacon" route="/">
       <Hero imgUrl="/hero-bridge.jpg" style={{ position: "relative" }}>
         <div className="hero-text">
           <Headline>

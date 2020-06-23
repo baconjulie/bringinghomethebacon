@@ -4,7 +4,7 @@ import Head from "next/head";
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 
-const Layout = ({ children, title = "DA BACON" }) => (
+const Layout = ({ children, title = "J&A Wedding", route = "/" }) => (
   <Fragment>
     <Head>
       <title>{title}</title>
@@ -23,7 +23,7 @@ const Layout = ({ children, title = "DA BACON" }) => (
 
     <div>
       <header>
-        <Nav />
+        <Nav route={route} />
       </header>
 
       <main>

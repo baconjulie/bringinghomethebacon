@@ -9,7 +9,7 @@ import Hotel from "../components/icons/hotel";
 
 const Events = () => (
   <div>
-    <Layout title="Events">
+    <Layout title="Getting There" route="/getting-there">
       <div className="center" style={{ marginBottom: "2rem" }}>
         <Headline>getting there</Headline>
       </div>

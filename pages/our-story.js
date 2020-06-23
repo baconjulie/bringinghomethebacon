@@ -6,7 +6,7 @@ import Detail from "../components/type/detail";
 
 const OurStory = () => (
   <Fragment>
-    <Layout title="Our Story">
+    <Layout title="Our Story" route="/our-story">
       <div className="hero">
         <img src="/eucalyptusbouquet.png" className="eucalyptus" />
         <section className="grid about-section">
