@@ -127,15 +127,16 @@ const Nav = () => {
             left: 0;
             background: var(--white);
             z-index: 2;
+            display: flex;
+            align-items: center;
           }
           .mobile-nav.active {
-            display: block;
             transform: translateX(0);
           }
           .mobile-nav ul {
             flex-direction: column;
             justify-content: center;
-            padding-top: 2rem;
+            padding: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
