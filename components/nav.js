@@ -43,7 +43,7 @@ const Nav = props => {
       <div className={`mobile-nav ${isActive ? "active" : ""}`}>
         <ul>
           {links.map(({ key, href, label }) => (
-            <li key={key}>
+            <li key={key} className={`${route === href ? "current" : ""}`}>
               <Link href={href}>
                 <a>{label}</a>
               </Link>
