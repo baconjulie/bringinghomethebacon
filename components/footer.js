@@ -5,17 +5,17 @@ const Footer = () => (
   <footer>
     <ul>
       <li>
-        <a href="/">Home</a>
+        <a href="/">Wedding</a>
       </li>
       <li>
-        <a href="/events">Event Details</a>
+        <a href="/getting-there">Getting There</a>
       </li>
       <li>
-        <a href="/registry">Registry</a>
+        <a href="/our-story">Our Story</a>
       </li>
       <li>
         <a href="https://github.com/baconjulie/bringinghomethebacon">
-          Made With 💛On Github
+          Made With 💜On Github
         </a>
       </li>
     </ul>
@@ -38,7 +38,7 @@ const Footer = () => (
         li {
           display: flex;
           justify-content: space-between;
-          padding: 1rem;
+          padding: 0.5rem;
         }
         a {
           color: var(--white);

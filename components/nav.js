@@ -4,9 +4,9 @@ import Link from "next/link";
 import Menu from "../components/icons/menu";
 
 const links = [
-  { href: "/our-story", label: "Our Story" },
-  { href: "/events", label: "Event Details" },
-  { href: "/registry", label: "Registry" }
+  { href: "/", label: "Wedding" },
+  { href: "/getting-there", label: "Getting There" },
+  { href: "/our-story", label: "Our Story" }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
@@ -26,7 +26,8 @@ const Nav = () => {
       </div>
       <nav>
         <a href="/" className="names">
-          J<span className="ampersand">&</span>A
+          <span className="julie">J</span>
+          <span className="ampersand">&</span>A
         </a>
         <ul>
           {links.map(({ key, href, label }) => (
@@ -73,6 +74,10 @@ const Nav = () => {
             font-family: "WildYouth";
             font-size: 35px;
             letter-spacing: 2px;
+          }
+          .julie {
+            font-size: 30px;
+            font-weight: bold;
           }
           .ampersand {
             color: var(--primary);
@@ -138,7 +143,7 @@ const Nav = () => {
           @media only screen and (min-width: 992px) {
             nav ul {
               width: 650px;
-              padding-top: 2rem;
+              padding-top: 0.25rem;
               display: flex;
               justify-content: space-between;
               align-items: center;

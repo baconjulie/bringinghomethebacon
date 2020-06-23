@@ -47,7 +47,7 @@ const Home = () => (
           </div>
           <div className="col-sm-12 col-md-5 img-wrapper">
             <Frame dir="right">
-              <img src="/gm1.jpg" className="img" />
+              <img src="/ceremony.jpg" className="img" />
             </Frame>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Home = () => (
         <div className="row center-xs">
           <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
             <Frame dir="left">
-              <img src="/gm2.jpg" className="img" />
+              <img src="/tent.jpg" className="img" />
             </Frame>
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
@@ -81,7 +81,7 @@ const Home = () => (
       }
       .description {
         margin: 0;
-        font-size: 36px;
+        font-size: 20px;
       }
       .tagline {
         margin: 0.5rem 0 0 0;
@@ -130,6 +130,9 @@ const Home = () => (
         .ceremony-img,
         .reception-img {
           width: 300px;
+        }
+        .description {
+          font-size: 34px;
         }
       }
     `}</style>

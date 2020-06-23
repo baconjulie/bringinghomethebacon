@@ -9,9 +9,9 @@ const OurStory = () => (
     <Layout title="Our Story">
       <div className="hero">
         <img src="/eucalyptusbouquet.png" className="eucalyptus" />
-        <section className="ceremony grid">
+        <section className="grid about-section">
           <div className="row center-xs">
-            <div className="col-sm-12 col-md-6 ceremony-info">
+            <div className="col-sm-12 col-md-6">
               <Headline>our story</Headline>
               <Detail size="sm">
                 <p>
@@ -35,9 +35,10 @@ const OurStory = () => (
                   cooking, hiking, camping and just being together. We couldn't
                   be more excited to share our love with our closest friends and
                   family with an intimate celebration in our favorite
-                  place--nature!
+                  place—nature!
                 </p>
               </Detail>
+              <Subhead color="purple">—julie&alex</Subhead>
             </div>
           </div>
         </section>
@@ -52,7 +53,14 @@ const OurStory = () => (
         line-height: 1.5;
         font-size: 18px;
       }
+      .about-section {
+        margin: 0 auto;
+        padding: 0 3rem;
+      }
       @media only screen and (min-width: 992px) {
+        .about-section {
+          padding: 0;
+        }
         .eucalyptus {
           display: block;
           position: absolute;

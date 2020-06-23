@@ -22,12 +22,17 @@ const Detail = ({ children, size, color = "black" }) => (
         letter-spacing: 0.5px;
       }
       .detail-lg {
-        font-size: 35px;
+        font-size: 28px;
         font-family: "AbrilFatFace";
         letter-spacing: 2px;
         font-weight: bold;
         line-height: 1.75;
         margin-top: 1rem;
+      }
+      @media only screen and (min-width: 1024px) {
+        .detail-lg {
+          font-size: 35px;
+        }
       }
     `}</style>
   </Fragment>
