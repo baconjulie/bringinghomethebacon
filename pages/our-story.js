@@ -38,7 +38,7 @@ const OurStory = () => (
                   place—nature!
                 </p>
               </Detail>
-              <Subhead color="purple">—julie&alex</Subhead>
+              <Subhead color="purple">—julie & alex</Subhead>
             </div>
           </div>
         </section>

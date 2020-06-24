@@ -35,7 +35,7 @@ const Events = () => (
                   </a>
                   <br />
                   <br />
-                  We're secured a group rate for a hotel block for both Friday
+                  We've secured a group rate for a hotel block for both Friday
                   and Saturday evening.
                   <br />
                   Tell them you're with the <i>~Arsenault Wedding~</i> when
@@ -63,8 +63,9 @@ const Events = () => (
                   <Detail size="xs">
                     {" "}
                     Taxis, ubers and rental cars are easily accessible from
-                    Logan Airport to get you to and from Danvers. We will also
-                    be providing a shuttle to and from the wedding.
+                    Logan Airport to get you to and from Danvers. We will be
+                    providing a shuttle to/from the wedding, with pick up and
+                    drop off from the Marriott Courtyard.
                   </Detail>
                 </div>
               </div>
