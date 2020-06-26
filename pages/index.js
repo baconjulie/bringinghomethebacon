@@ -11,10 +11,10 @@ import Vine from "../components/icons/vine";
 const Home = () => (
   <Fragment>
     <Head>
-      <link rel="preload" href="/hero-bridge.jpg" as="image"></link>
+      <link rel="preload" href="/hero-1800.jpg" as="image"></link>
     </Head>
     <Layout title="Bringing Home the Bacon" route="/">
-      <Hero imgUrl="/hero-bridge.jpg" style={{ position: "relative" }}>
+      <Hero imgUrl="/hero-1800.jpg" style={{ position: "relative" }}>
         <div className="hero-text">
           <Headline>
             <span className="fade1">Save</span>&nbsp;
@@ -31,7 +31,7 @@ const Home = () => (
       </Hero>
       <section className="ceremony grid">
         <div className="row center-xs">
-          <div className="col-sm-12 col-md-5 ceremony-info">
+          <div className="col-xs-12 col-md-5 ceremony-info">
             <Subhead>Ceremony</Subhead>
             <Detail size="lg" color="purple">
               4:00 PM
@@ -69,9 +69,8 @@ const Home = () => (
               4:30 PM - 10:00 PM
             </Detail>
             <Detail size="sm">
-              Cocktail hour, dinner &amp; dancing will
-              <br />
-              continue at the Mansion + Garden grounds
+              Cocktail hour, dinner and dancing will continue at the mansion +
+              garden grounds
             </Detail>
           </div>
         </div>
@@ -123,7 +122,7 @@ const Home = () => (
         width: 300px;
       }
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: 1200px) {
         .img-wrapper {
           width: 100%;
         }
