@@ -16,7 +16,7 @@ const Events = () => (
     <Layout title="Getting There" route="/getting-there">
       <div className="center" style={{ marginBottom: "2rem" }}>
         <img src="/branch2.png" className="branch" />
-        <Headline>getting there</Headline>
+        <Headline>Getting there</Headline>
       </div>
       <section>
         <div className="grid">

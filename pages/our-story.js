@@ -18,7 +18,7 @@ const OurStory = () => (
           <div className="row center-xs">
             <div className="col-sm-12 col-md-6">
               <img src="/branch2.png" className="branch" />
-              <Headline>our story</Headline>
+              <Headline>Our story</Headline>
               <Detail size="sm">
                 <p>
                   Our story begins in the summer of 2014 in Boston, MA. We met

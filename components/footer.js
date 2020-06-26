@@ -15,7 +15,7 @@ const Footer = () => (
       </li>
       <li>
         <a href="https://github.com/baconjulie/bringinghomethebacon">
-          Made With 💜On Github
+          Made With 💜 On Github
         </a>
       </li>
     </ul>
