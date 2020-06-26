@@ -9,6 +9,7 @@ const OurStory = () => (
   <Fragment>
     <Head>
       <link rel="preload" href="/eucalyptusbouquet.png" as="image"></link>
+      <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="Our Story" route="/our-story">
       <div className="hero">
@@ -16,6 +17,7 @@ const OurStory = () => (
         <section className="grid about-section">
           <div className="row center-xs">
             <div className="col-sm-12 col-md-6">
+              <img src="/branch2.png" className="branch2" />
               <Headline>our story</Headline>
               <Detail size="sm">
                 <p>
@@ -74,9 +76,15 @@ const OurStory = () => (
         margin: 0 auto;
         padding: 0 3rem;
       }
+      .branch2 {
+        width: 200px;
+      }
       @media only screen and (min-width: 992px) {
         .about-section {
           padding: 0;
+        }
+        .branch2 {
+          width: 300px;
         }
         .eucalyptus {
           display: block;
