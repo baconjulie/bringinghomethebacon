@@ -18,7 +18,7 @@ In the terminal run the following:
 
 ```
 npm i
-npm run next
+npm run dev
 ```
 
 Spin up `localhost:3000` in your browser.

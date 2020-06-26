@@ -10,14 +10,13 @@ const Frame = ({ children, dir }) => (
       .frame-wrapper {
         position: relative;
         display: inline-block;
-        height: 100%;
         margin-top: 1rem;
       }
       .frame {
         position: absolute;
-        width: calc(100% - 3px);
-        height: calc(100% - 3px);
-        border: 3px solid black;
+        width: calc(100% - 5px);
+        height: calc(100% - 12px);
+        border: 5px solid black;
         transition: all 300ms ease-in-out;
       }
       .frame:hover {
@@ -26,12 +25,12 @@ const Frame = ({ children, dir }) => (
         right: 0;
       }
       .frame-right {
-        top: 10px;
-        left: 20px;
+        top: 8px;
+        left: 8px;
       }
       .frame-left {
         top: -15px;
-        left: 25px;
+        left: 10px;
       }
     `}</style>
   </Fragment>

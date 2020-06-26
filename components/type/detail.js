@@ -22,7 +22,7 @@ const Detail = ({ children, size, color = "black" }) => (
         letter-spacing: 0.5px;
       }
       .detail-lg {
-        font-size: 28px;
+        font-size: 24px;
         font-family: "AbrilFatFace";
         letter-spacing: 2px;
         font-weight: bold;
