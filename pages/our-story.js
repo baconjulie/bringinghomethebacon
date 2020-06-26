@@ -17,7 +17,7 @@ const OurStory = () => (
         <section className="grid about-section">
           <div className="row center-xs">
             <div className="col-sm-12 col-md-6">
-              <img src="/branch2.png" className="branch2" />
+              <img src="/branch2.png" className="branch" />
               <Headline>our story</Headline>
               <Detail size="sm">
                 <p>
@@ -76,14 +76,14 @@ const OurStory = () => (
         margin: 0 auto;
         padding: 0 3rem;
       }
-      .branch2 {
+      .branch {
         width: 200px;
       }
       @media only screen and (min-width: 992px) {
         .about-section {
           padding: 0;
         }
-        .branch2 {
+        .branch {
           width: 300px;
         }
         .eucalyptus {

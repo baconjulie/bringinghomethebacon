@@ -8,7 +8,7 @@ const Detail = ({ children, size, color = "black" }) => (
         margin: 0;
       }
       .detail-xs {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.4;
       }
       .detail-sm {

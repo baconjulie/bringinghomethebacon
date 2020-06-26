@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Head from "next/head";
 import Layout from "../components/layout";
 import Headline from "../components/type/headline";
 import Subhead from "../components/type/subhead";
@@ -8,17 +9,21 @@ import Plane from "../components/icons/plane";
 import Hotel from "../components/icons/hotel";
 
 const Events = () => (
-  <div>
+  <Fragment>
+    <Head>
+      <link rel="preload" href="/branch2.png" as="image"></link>
+    </Head>
     <Layout title="Getting There" route="/getting-there">
       <div className="center" style={{ marginBottom: "2rem" }}>
+        <img src="/branch2.png" className="branch" />
         <Headline>getting there</Headline>
       </div>
       <section>
         <div className="grid">
           <div className="row center-xs">
-            <div className="col-sm-12 col-md-8">
-              <div style={{ marginBottom: "4rem" }}>
-                <Hotel width="100px" />
+            <div className="col-sm-12 col-md-6">
+              <div style={{ marginBottom: "5rem" }}>
+                <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
                 <Detail size="md">Courtyard Marriott</Detail>
                 <Detail size="xs">
@@ -36,15 +41,13 @@ const Events = () => (
                   <br />
                   <br />
                   We've secured a group rate for a hotel block for both Friday
-                  and Saturday evening.
-                  <br />
-                  Tell them you're with the <i>~Arsenault Wedding~</i> when
-                  booking!
+                  and Saturday evening. Tell them you're with the{" "}
+                  <i>~Arsenault Wedding~</i> when booking!
                 </Detail>
               </div>
-              <div style={{ marginBottom: "4rem" }}>
-                <Plane width="110px" />
-                <Subhead color="purple">Getting There</Subhead>
+              <div style={{ marginBottom: "5rem" }}>
+                <Plane width="100px" />
+                <Subhead color="purple">Travel</Subhead>
                 <Detail size="md">Airport</Detail>
                 <Detail size="xs">
                   Out of town guests can fly into{" "}
@@ -53,7 +56,7 @@ const Events = () => (
                     target="_blank"
                     className="link"
                   >
-                    Boston Logan International Airport
+                    Boston Logan Airport
                   </a>
                   . Danvers is about a 30 minute drive from the airport via ride
                   share or rental car.
@@ -70,7 +73,7 @@ const Events = () => (
                 </div>
               </div>
               <div>
-                <Cheers width="125px" />
+                <Cheers width="110px" />
                 <Subhead color="purple">Things to Do!</Subhead>
                 <Detail size="xs">
                   Boston has a very special place in our hearts. If you find you
@@ -96,6 +99,9 @@ const Events = () => (
         section {
           margin: 4rem;
         }
+        .branch {
+          width: 200px;
+        }
         .link {
           background: linear-gradient(
             to bottom,
@@ -115,9 +121,14 @@ const Events = () => (
         .link:hover {
           background-size: 4px 50px;
         }
+        @media only screen and (min-width: 992px) {
+          .branch {
+            width: 300px;
+          }
+        }
       `}
     </style>
-  </div>
+  </Fragment>
 );
 
 export default Events;
