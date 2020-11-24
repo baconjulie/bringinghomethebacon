@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Head from "next/head";
 import GTMScript from "./analytics/gtm";
 import Nav from "../components/nav";
+import Banner from "../components/banner";
 import Footer from "../components/footer";
 
 const Layout = ({ children, title = "J&A Wedding", route = "/" }) => (
@@ -23,6 +24,7 @@ const Layout = ({ children, title = "J&A Wedding", route = "/" }) => (
     </Head>
 
     <div>
+      <Banner />
       <header>
         <Nav route={route} />
       </header>
