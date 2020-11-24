@@ -11,7 +11,7 @@ const Hero = ({ children, imgUrl }) => (
         height: calc(100vh - 100px);
         background-size: cover;
         background-position: center;
-        color: var(--white);
+        color: var(--secondary);
         text-align: center;
         display: flex;
         flex-direction: column;

@@ -80,7 +80,7 @@ const Home = () => (
     <style jsx>{`
       .hero-text {
         position: absolute;
-        top: 35%;
+        top: 25%;
       }
       .description {
         margin: 0;

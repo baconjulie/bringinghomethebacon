@@ -14,6 +14,9 @@ const Footer = () => (
         <a href="/our-story">Our Story</a>
       </li>
       <li>
+        <a href="/covid-update">Covid Update</a>
+      </li>
+      <li>
         <a href="https://github.com/baconjulie/bringinghomethebacon">
           Made With 💜 On Github
         </a>
