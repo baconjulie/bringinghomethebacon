@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <Fragment>
       <div className="banner">
-        We're monitoring the ongoing health crisis. Please read our&nbsp;
+        We're monitoring the ongoing pandemic. Please read our&nbsp;
         <a href="/covid-update" className="banner-link">
           COVID-19 updates
         </a>
