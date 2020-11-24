@@ -14,7 +14,8 @@ const Nav = props => {
   const links = [
     { href: "/", label: "Wedding" },
     { href: "/getting-there", label: "Getting There" },
-    { href: "/our-story", label: "Our Story" }
+    { href: "/our-story", label: "Our Story" },
+    { href: "/covid-update", label: "Covid Update" }
   ].map(link => {
     link.key = `nav-link-${link.href}-${link.label}`;
     return link;

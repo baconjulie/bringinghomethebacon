@@ -69,8 +69,8 @@ const Home = () => (
               4:30 PM - 10:00 PM
             </Detail>
             <Detail size="sm">
-              Cocktail hour, dinner and dancing will continue at the mansion +
-              garden grounds
+              Dinner and celebrations will continue at the mansion + garden
+              grounds
             </Detail>
           </div>
         </div>

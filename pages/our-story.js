@@ -16,10 +16,11 @@ const OurStory = () => (
         <img src="/eucalyptusbouquet.png" className="eucalyptus" />
         <section className="grid about-section">
           <div className="row center-xs">
-            <div className="col-sm-12 col-md-6">
+            <div className="col-sm-12 col-md-6 col-lg-5">
               <img src="/branch2.png" className="branch" />
               <Headline>Our story</Headline>
               <Detail size="sm">
+                <br />
                 <p>
                   Our story begins in the summer of 2014 in Boston, MA. We met
                   at our summer internships in the city, heading to our first
