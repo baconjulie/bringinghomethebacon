@@ -21,7 +21,7 @@ const Events = () => (
       <section>
         <div className="grid">
           <div className="row center-xs">
-            <div className="col-sm-12 col-md-6">
+            <div className="col-sm-12 col-md-6 col-lg-4">
               <div style={{ marginBottom: "5rem" }}>
                 <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
@@ -43,6 +43,13 @@ const Events = () => (
                   We've secured a group rate for a hotel block for both Friday
                   and Saturday evening. Tell them you're with the{" "}
                   <i>~Arsenault Wedding~</i> when booking!
+                  <br />
+                  <br />
+                  Marriott is taking&nbsp;
+                  <a href="https://clean.marriott.com/" className="link">
+                    extra precautions
+                  </a>{" "}
+                  when it comes to health and safety during these times.
                 </Detail>
               </div>
               <div style={{ marginBottom: "5rem" }}>
@@ -62,13 +69,13 @@ const Events = () => (
                   share or rental car.
                 </Detail>
                 <div style={{ paddingTop: "2rem" }}>
-                  <Detail size="md">Taxis and Shuttle</Detail>
+                  <Detail size="md">Taxis and Rentals</Detail>
                   <Detail size="xs">
                     {" "}
                     Taxis, ubers and rental cars are easily accessible from
-                    Logan Airport to get you to and from Danvers. We will be
-                    providing a shuttle to/from the wedding, with pick up and
-                    drop off from the Marriott Courtyard.
+                    Logan Airport to get you to and from Danvers. Guests will
+                    drive themselves to and from our wedding to maintain social
+                    distancing.
                   </Detail>
                 </div>
               </div>
@@ -78,9 +85,10 @@ const Events = () => (
                 <Detail size="xs">
                   Boston has a very special place in our hearts. If you find you
                   have some extra time to explore the area, we recommend you
-                  check out a Red Sox game at Fenway, stroll the Boston Public
-                  Gardens, get some Italian food in the North End, and unwind at
-                  Trade Boston (our first date spot!)
+                  enjoy safe, socially distant activities in Boston. Stroll the
+                  Boston Public Gardens, walk along the Seaport, dine al fresco
+                  like a true Italian in the North End, and unwind at Trade
+                  Boston (our first date spot!)
                 </Detail>
               </div>
             </div>
