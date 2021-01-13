@@ -81,6 +81,7 @@ const Home = () => (
       .hero-text {
         position: absolute;
         top: 25%;
+        left: 15%;
       }
       .description {
         margin: 0;
