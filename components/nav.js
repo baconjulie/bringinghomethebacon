@@ -79,16 +79,17 @@ const Nav = props => {
           .names {
             display: inline;
             font-family: "WildYouth";
-            font-size: 35px;
+            font-size: 45px;
             letter-spacing: 2px;
           }
           .julie {
-            font-size: 30px;
+            font-size: 35px;
             font-weight: bold;
           }
           .ampersand {
             color: var(--primary);
             font-family: "AbrilFatFace";
+            font-size: 35px;
           }
           nav ul {
             display: none;
@@ -151,8 +152,8 @@ const Nav = props => {
           }
           @media only screen and (min-width: 992px) {
             nav ul {
-              width: 650px;
-              padding-top: 0.25rem;
+              width: 750px;
+              padding: 0.5rem 0;
               display: flex;
               justify-content: space-between;
               align-items: center;

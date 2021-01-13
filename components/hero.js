@@ -10,8 +10,8 @@ const Hero = ({ children, imgUrl }) => (
         width: 100%;
         height: calc(100vh - 100px);
         background-size: cover;
-        background-position: bottom;
-        color: var(--tertiary);
+        background-position: center;
+        color: var(--white);
         text-align: center;
         display: flex;
         flex-direction: column;

@@ -11,10 +11,10 @@ import Vine from "../components/icons/vine";
 const Home = () => (
   <Fragment>
     <Head>
-      <link rel="preload" href="/hero-1800.jpg" as="image"></link>
+      <link rel="preload" href="/hero-desktop.jpg" as="image"></link>
     </Head>
     <Layout title="Bringing Home the Bacon" route="/">
-      <Hero imgUrl="/hero-1800.jpg" style={{ position: "relative" }}>
+      <Hero imgUrl="/hero-desktop.jpg" style={{ position: "relative" }}>
         <div className="hero-text">
           <Headline>
             <span className="fade1">Save</span>&nbsp;
@@ -32,6 +32,12 @@ const Home = () => (
       <section className="ceremony grid">
         <div className="row center-xs">
           <div className="col-xs-12 col-md-5 ceremony-info">
+            <img
+              src="/eucalyptusbouquet.png"
+              className="eucalyptus"
+              width="150"
+              alt="Eucalyptus bunch"
+            />
             <Subhead>Ceremony</Subhead>
             <Detail size="lg" color="purple">
               4:00 PM
@@ -64,13 +70,20 @@ const Home = () => (
             </Frame>
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
+            <img
+              src="/eucalyptusbouquet.png"
+              className="eucalyptus"
+              width="150"
+              alt="Eucalyptus bunch"
+            />
             <Subhead>Reception</Subhead>
             <Detail size="lg" color="purple">
               4:30 PM - 10:00 PM
             </Detail>
             <Detail size="sm">
-              Dinner and celebrations will continue at the mansion + garden
-              grounds
+              Dinner and celebrations will continue
+              <br />
+              at the mansion + garden grounds
             </Detail>
           </div>
         </div>

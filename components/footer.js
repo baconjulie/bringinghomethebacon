@@ -11,22 +11,22 @@ const Footer = () => (
         <a href="/getting-there">Getting There</a>
       </li>
       <li>
-        <a href="/our-story">Our Story</a>
-      </li>
-      <li>
         <a href="/covid-update">Covid Update</a>
       </li>
       <li>
-        <a href="https://www.crateandbarrel.com/gift-registry/julie-bacon-and-alex-arsenault/r6148393">
+        <a
+          href="https://www.crateandbarrel.com/gift-registry/julie-bacon-and-alex-arsenault/r6148393"
+          target="_blank"
+        >
           Registry
         </a>
       </li>
-      <li>
-        <a href="https://github.com/baconjulie/bringinghomethebacon">
-          Made With 💜 On Github
-        </a>
-      </li>
     </ul>
+    <div style={{ textAlign: "center", paddingBottom: "2rem" }}>
+      <a href="https://github.com/baconjulie/bringinghomethebacon">
+        Made With 💜 On Github
+      </a>
+    </div>
 
     <style jsx>
       {`
@@ -41,7 +41,7 @@ const Footer = () => (
           justify-content: space-between;
           height: 100%;
           margin: 0;
-          padding: 1rem;
+          padding: 2rem;
         }
         li {
           display: flex;
@@ -54,10 +54,6 @@ const Footer = () => (
           font-size: 16px;
         }
         @media only screen and (min-width: 992px) {
-          ul {
-            flex-direction: row;
-            padding: 2rem 4rem;
-          }
           li {
             padding: 0.5rem;
           }
