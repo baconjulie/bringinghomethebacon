@@ -33,16 +33,21 @@ const CovidUpdate = () => (
                   planned.
                   <br />
                   <br />
-                  We are monitoring the ongoing global pandemic and the
-                  implications it means for guest size, health and safety
-                  precautions to ensure we are following CDC guidelines. While
-                  we hope that by next spring it will be safe to gather and
-                  celebrate, we will be posting updates to this space as needed.
-                  Thank you for your patience and understanding, and we cannot
-                  wait to be together with you in person again!
+                  Due to the ongoing pandemic and for everyone's safety, we have
+                  made an extremely difficult decision to downsize our wedding.
+                  In even the most trying of times, our love is stronger than
+                  ever, and something to be celebrated! We will no longer be
+                  hosting a large celebration and have opted for an intimate
+                  ceremony and backyard gathering to comply with state
+                  restrictions.
                   <br />
                   <br />
-                  <Subhead color="purple">love,</Subhead>
+                  While we wish we could have all our loved ones in attendance,
+                  we can't wait to celebrate with everyone in style at a later
+                  date. Lots of Love, Julie & Alex
+                  <br />
+                  <br />
+                  <Subhead color="purple">with love,</Subhead>
                   <Detail size="md">Julie & Alex</Detail>
                 </Detail>
               </div>

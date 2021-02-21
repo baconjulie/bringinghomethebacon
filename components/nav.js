@@ -62,7 +62,7 @@ const Nav = props => {
           :global(body) {
             margin: 0;
             font-family: "Raleway", Avenir Next, Avenir, Helvetica, sans-serif;
-            --primary: #9e6381;
+            --primary: #9b2447;
             --secondary: #b785a9;
             --tertiary: #673046;
             --white: #fff;
