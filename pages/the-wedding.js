@@ -75,11 +75,12 @@ const TheWedding = () => (
             <Detail size="sm">
               36 Longfellow Road
               <br />
-              Norwood, MA Drinks
+              Norwood, MA 02062
               <br />
               <br />
-              Drinks, dinner and celebrations will continue safely at the
-              backyard after-party
+              Drinks, dinner and celebrations will
+              <br />
+              continue safely at the backyard after-party
             </Detail>
             <a
               className="map-link"
