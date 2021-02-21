@@ -80,9 +80,16 @@ const TheWedding = () => (
               Norwood, MA Drinks
               <br />
               <br />
-              Drinks, dinner and celebrations will continue at the backyard
-              after-party
+              Drinks, dinner and celebrations will continue safely at the
+              backyard after-party
             </Detail>
+            <a
+              className="map-link"
+              target="_blank"
+              href="https://www.google.com/maps/place/36+Longfellow+Rd,+Norwood,+MA+02062/@42.1878565,-71.2170089,17z/data=!3m1!4b1!4m5!3m4!1s0x89e47e35465274e9:0x622a09c6fd475e2d!8m2!3d42.1878565!4d-71.2148202"
+            >
+              Map
+            </a>
           </div>
         </div>
       </section>
