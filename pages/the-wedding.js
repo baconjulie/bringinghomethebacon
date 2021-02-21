@@ -15,8 +15,7 @@ const TheWedding = () => (
       <div className="center" style={{ marginBottom: "2rem" }}>
         <img src="/branch2.png" className="branch" />
         <br />
-        Please join us for our
-        <br />
+        <div className="label">Please join us for our an</div>
         <Headline>Intimate Wedding</Headline>
       </div>
       <section className="ceremony grid">
@@ -107,6 +106,7 @@ const TheWedding = () => (
         }
         .branch {
           width: 200px;
+          margin-bottom: 1rem;
         }
         .link {
           background: linear-gradient(
@@ -122,6 +122,13 @@ const TheWedding = () => (
           transition: all 0.2s;
           margin-top: 0.5rem;
           font-size: 20px;
+        }
+        .label {
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 16px;
+          font-weight: bold;
         }
         .map-link {
           background: linear-gradient(

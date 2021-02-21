@@ -5,13 +5,13 @@ const Footer = () => (
   <footer>
     <ul>
       <li>
-        <a href="/">Wedding</a>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/the-wedding">The Wedding</a>
       </li>
       <li>
         <a href="/getting-there">Getting There</a>
-      </li>
-      <li>
-        <a href="/covid-update">Covid Update</a>
       </li>
       <li>
         <a
@@ -24,7 +24,7 @@ const Footer = () => (
     </ul>
     <div style={{ textAlign: "center", paddingBottom: "2rem" }}>
       <a href="https://github.com/baconjulie/bringinghomethebacon">
-        Made With 💜 On Github
+        Made With 🧡 On Github
       </a>
     </div>
 

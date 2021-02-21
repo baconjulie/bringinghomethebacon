@@ -10,11 +10,11 @@ const Home = () => (
       <link rel="preload" href="/hero-bridge.jpg" as="image"></link>
     </Head>
     <Layout title="Bringing Home the Bacon" route="/">
-      <div className="row center-xs">
-        <div
-          className="col-xs-12 col-md-4 col-sm-offset-1"
-          style={{ marginTop: "4rem" }}
-        >
+      <div
+        className="row center-xs"
+        style={{ paddingTop: "3rem", paddingBottom: "4rem" }}
+      >
+        <div className="col-xs-12 col-md-4 col-sm-offset-1">
           <Subhead>Change of Plans!</Subhead>
           <Detail size="md" color="purple">
             We're Going Micro

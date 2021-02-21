@@ -20,9 +20,9 @@ const Events = () => (
       </div>
       <section>
         <div className="grid">
-          <div className="row center-xs">
-            <div className="col-sm-12 col-md-6 col-lg-6">
-              <div style={{ marginBottom: "5rem" }}>
+          <div className="row center-xs" style={{ margin: "3rem 0" }}>
+            <div className="col-sm-12 col-md-3">
+              <div>
                 <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
                 <Detail size="md">907 Main</Detail>
@@ -30,68 +30,86 @@ const Events = () => (
                   907 Main St
                   <br />
                   Cambridge, MA 02139
-                  <br />
-                  <br />
-                  <a href="https://www.907main.com/" className="link">
-                    Hotel website
-                  </a>
-                  <br />
-                  <br />
-                  We've secured a group rate for a hotel block for both Friday
-                  and Saturday evening for any guests interested. Tell them
-                  you're with the <i>~Arsenault Wedding~</i> when booking.
-                  <br />
-                  <br />
-                  907 Main is taking extra precautions when it comes to health
-                  and safety.
-                </Detail>
-              </div>
-              <div style={{ marginBottom: "5rem" }}>
-                <Plane width="100px" />
-                <Subhead color="purple">Travel</Subhead>
-                <Detail size="md">Airport</Detail>
-                <Detail size="xs">
-                  Out of town guests can fly into{" "}
-                  <a
-                    href="http://www.massport.com/logan-airport/"
-                    target="_blank"
-                    className="link"
-                  >
-                    Boston Logan Airport
-                  </a>
-                  .
-                </Detail>
-                <div style={{ paddingTop: "2rem" }}>
-                  <Detail size="md">Transportation</Detail>
-                  <Detail size="xs">
-                    {" "}
-                    Guests will drive themselves to and from our wedding to
-                    maintain social distancing. Rental cars and ubers are
-                    readily available from Logan Airport for out of town guests.
-                  </Detail>
-                </div>
-              </div>
-              <div>
-                <Cheers width="110px" />
-                <Subhead color="purple">Safety First!</Subhead>
-                <Detail size="xs">
-                  In an effort to keep our intimate wedding as safe as possible,
-                  we will be providing all guests masks, hand sanitizer, and
-                  keeping events outdoors. We kindly ask that each guest get a
-                  negative covid-19 test within 3 days before the wedding. There
-                  are a variety of{" "}
-                  <a
-                    href="https://www.solvhealth.com/ma/c/cambridge-ma-srv-covid-testing"
-                    target="_blank"
-                    className="link"
-                  >
-                    testing sites
-                  </a>{" "}
-                  in the area. Please don't hesitate to reach out to us if you
-                  need help finding a testing site.
                 </Detail>
               </div>
             </div>
+            <div className="col-sm-12 col-md-3 align-center">
+              <Detail size="xs">
+                We've secured a group rate for a hotel block for both Friday and
+                Saturday evening for any guests interested. Tell them you're
+                with the <i>~Arsenault Wedding~</i> when booking.{" "}
+                <a href="https://www.907main.com/" className="link">
+                  Hotel website
+                </a>
+                <br />
+                <br />
+                907 Main is taking extra precautions when it comes to health and
+                safety.
+              </Detail>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div className="center">
+          <img src="/branch2.png" className="small-branch" />
+        </div>
+        <div className="row center-xs" style={{ margin: "3rem 0" }}>
+          <div className="col-sm-12 col-md-3">
+            <div>
+              <Plane width="100px" />
+              <Subhead color="purple">Travel</Subhead>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-3 align-center">
+            <div>
+              <Detail size="xs">
+                Out of town guests can fly into
+                <br />
+                <a
+                  href="http://www.massport.com/logan-airport/"
+                  target="_blank"
+                  className="link"
+                >
+                  Boston Logan Airport
+                </a>
+                .
+              </Detail>
+              <Detail size="xs">
+                <br />
+                Guests will drive themselves to and from our wedding to maintain
+                social distancing. Rental cars and ubers are readily available
+                from Logan Airport for out of town guests.
+              </Detail>
+            </div>
+          </div>
+        </div>
+        <div className="center">
+          <img src="/branch2.png" className="small-branch-right" />
+        </div>
+        <div className="row center-xs" style={{ margin: "3rem 0" }}>
+          <div className="col-sm-12 col-md-3">
+            <Cheers width="110px" />
+            <Subhead color="purple">Safety First!</Subhead>
+          </div>
+          <div className="col-sm-12 col-md-3 align-center">
+            <Detail size="xs">
+              In an effort to keep our intimate wedding as safe as possible, we
+              will be providing all guests masks, hand sanitizer, and keeping
+              events outdoors. We kindly ask that each guest quarantine for 14
+              days or get a negative covid-19 test within 3 days before the
+              wedding. There are a variety of{" "}
+              <a
+                href="https://www.solvhealth.com/ma/c/cambridge-ma-srv-covid-testing"
+                target="_blank"
+                className="link"
+              >
+                testing sites
+              </a>{" "}
+              in the area. <br />
+              <br />
+              Please don't hesitate to reach out to us if you need help finding
+              a testing site.
+            </Detail>
           </div>
         </div>
       </section>
@@ -101,6 +119,10 @@ const Events = () => (
         .img {
           max-width: 100%;
         }
+        .align-center {
+          display: flex;
+          align-items: center;
+        }
         .center {
           text-align: center;
         }
@@ -109,6 +131,14 @@ const Events = () => (
         }
         .branch {
           width: 200px;
+        }
+        .small-branch {
+          width: 150px;
+          transform: rotate(-25deg);
+        }
+        .small-branch-right {
+          width: 150px;
+          transform: rotate(25deg);
         }
         .link {
           background: linear-gradient(
