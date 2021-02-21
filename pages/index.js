@@ -1,10 +1,8 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import Layout from "../components/layout";
-import Frame from "../components/frame";
 import Subhead from "../components/type/subhead";
 import Detail from "../components/type/detail";
-import Hero from "../components/hero";
 
 const Home = () => (
   <Fragment>
@@ -22,6 +20,13 @@ const Home = () => (
             We're Going Micro
           </Detail>
           <Detail size="xs">
+            <br />
+            We hope you and yours are healthy and safe during this time, and we
+            appreciate all the love and support we’ve received from each of you.
+            Although the COVID-19 pandemic has created much uncertainty, we
+            still can't wait to get married on May 29th, 2021, even if it looks
+            a little different than we originally planned.
+            <br />
             <br />
             Due to the ongoing pandemic and for everyone's safety, we have made
             the difficult decision to downsize our wedding. In even the most
@@ -50,73 +55,6 @@ const Home = () => (
           />
         </div>
       </div>
-      <section className="ceremony grid">
-        <div className="row center-xs">
-          <div className="col-xs-12 col-md-5 ceremony-info">
-            <img
-              src="/eucalyptusbouquet.png"
-              className="eucalyptus"
-              width="150"
-              alt="Eucalyptus bunch"
-            />
-            <Subhead>Ceremony</Subhead>
-            <Detail size="lg" color="purple">
-              11:00 AM
-            </Detail>
-            <Detail size="sm">
-              Oleana <br />
-              134 Hampshire St
-              <br />
-              Cambridge, MA 02139
-              <br />
-              <br />
-              Lunch + Celebration to follow
-            </Detail>
-            <a
-              className="map-link"
-              target="_blank"
-              href="https://www.google.com/maps/place/Oleana/@42.3705494,-71.0971859,15z/data=!4m5!3m4!1s0x0:0xae84228b09fd944f!8m2!3d42.3705494!4d-71.0971859"
-            >
-              Map
-            </a>
-          </div>
-          <div className="col-sm-12 col-md-5 img-wrapper">
-            <Frame dir="right">
-              <img src="/oleana.png" className="img" />
-            </Frame>
-          </div>
-        </div>
-      </section>
-      <section className="reception grid">
-        <div className="row center-xs">
-          <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
-            <Frame dir="left">
-              <img src="/backyard.png" className="img" />
-            </Frame>
-          </div>
-          <div className="col-sm-12 col-md-5 reception-info">
-            <img
-              src="/eucalyptusbouquet.png"
-              className="eucalyptus"
-              width="150"
-              alt="Eucalyptus bunch"
-            />
-            <Subhead>After Party</Subhead>
-            <Detail size="lg" color="purple">
-              4:00 PM
-            </Detail>
-            <Detail size="sm">
-              36 Longfellow Road
-              <br />
-              Norwood, MA Drinks
-              <br />
-              <br />
-              Drinks, dinner and celebrations will continue at the backyard
-              after-party
-            </Detail>
-          </div>
-        </div>
-      </section>
     </Layout>
 
     <style jsx>{`

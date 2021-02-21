@@ -12,10 +12,10 @@ const Nav = props => {
   };
 
   const links = [
-    { href: "/", label: "Wedding" },
+    { href: "/", label: "Home" },
+    { href: "/the-wedding", label: "The Wedding" },
     { href: "/getting-there", label: "Getting There" },
     { href: "/our-story", label: "Our Story" },
-    { href: "/covid-update", label: "Covid Update" },
     {
       href:
         "https://www.crateandbarrel.com/gift-registry/julie-bacon-and-alex-arsenault/r6148393",
