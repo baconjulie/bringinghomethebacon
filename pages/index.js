@@ -15,7 +15,7 @@ const Home = () => (
         style={{ paddingTop: "3rem", paddingBottom: "4rem" }}
       >
         <div className="col-xs-12 col-md-4 col-sm-offset-1">
-          <Subhead>Change of Plans!</Subhead>
+          <Subhead color="peach">Change of Plans!</Subhead>
           <Detail size="md" color="purple">
             We're Going Micro
           </Detail>
@@ -42,7 +42,7 @@ const Home = () => (
             <br />
             <br />
           </Detail>
-          <Subhead color="purple">with love,</Subhead>
+          <Subhead color="peach">with love,</Subhead>
           <Detail size="md">Julie & Alex</Detail>
         </div>
         <div className="col-xs-12 col-md-6">
@@ -76,8 +76,8 @@ const Home = () => (
       .map-link {
         background: linear-gradient(
           to bottom,
-          var(--primary) 0%,
-          var(--primary) 100%
+          var(--peach) 0%,
+          var(--peach) 100%
         );
         background-position: 0 100%;
         background-repeat: repeat-x;

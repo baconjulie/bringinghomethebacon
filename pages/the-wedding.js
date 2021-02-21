@@ -12,11 +12,10 @@ const TheWedding = () => (
       <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="The Wedding" route="/the-wedding">
-      <div className="center" style={{ marginBottom: "2rem" }}>
-        <img src="/branch2.png" className="branch" />
-        <br />
+      <div className="center" style={{ margin: "3rem 0" }}>
         <div className="label">Please join us for our an</div>
         <Headline>Intimate Wedding</Headline>
+        <img src="/branch2.png" className="branch" />
       </div>
       <section className="ceremony grid">
         <div className="row center-xs">
@@ -105,7 +104,7 @@ const TheWedding = () => (
           margin: 4rem;
         }
         .branch {
-          width: 200px;
+          width: 150px;
           margin-bottom: 1rem;
         }
         .link {
@@ -133,8 +132,8 @@ const TheWedding = () => (
         .map-link {
           background: linear-gradient(
             to bottom,
-            var(--primary) 0%,
-            var(--primary) 100%
+            var(--peach) 0%,
+            var(--peach) 100%
           );
           background-position: 0 100%;
           background-repeat: repeat-x;
@@ -154,7 +153,7 @@ const TheWedding = () => (
         }
         @media only screen and (min-width: 992px) {
           .branch {
-            width: 300px;
+            width: 200px;
           }
         }
       `}

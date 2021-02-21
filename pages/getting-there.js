@@ -14,9 +14,9 @@ const Events = () => (
       <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="Getting There" route="/getting-there">
-      <div className="center" style={{ marginBottom: "2rem" }}>
-        <img src="/branch2.png" className="branch" />
+      <div className="center" style={{ margin: "3rem 0" }}>
         <Headline>Getting there</Headline>
+        <img src="/branch2.png" className="branch" />
       </div>
       <section>
         <div className="grid">
@@ -131,6 +131,7 @@ const Events = () => (
         }
         .branch {
           width: 200px;
+          margin-top: 1rem;
         }
         .small-branch {
           width: 150px;
@@ -143,8 +144,8 @@ const Events = () => (
         .link {
           background: linear-gradient(
             to bottom,
-            var(--primary) 0%,
-            var(--primary) 100%
+            var(--peach) 0%,
+            var(--peach) 100%
           );
           background-position: 0 100%;
           background-repeat: repeat-x;
@@ -161,7 +162,7 @@ const Events = () => (
         }
         @media only screen and (min-width: 992px) {
           .branch {
-            width: 300px;
+            width: 200px;
           }
         }
       `}

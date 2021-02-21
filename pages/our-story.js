@@ -12,13 +12,13 @@ const OurStory = () => (
       <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="Our Story" route="/our-story">
-      <div className="hero">
+      <div className="hero" style={{ margin: "3rem 0" }}>
         <img src="/eucalyptusbouquet.png" className="eucalyptus" />
         <section className="grid about-section">
           <div className="row center-xs">
             <div className="col-sm-12 col-md-6 col-lg-5">
-              <img src="/branch2.png" className="branch" />
               <Headline>Our story</Headline>
+              <img src="/branch2.png" className="branch" />
               <Detail size="sm">
                 <br />
                 <p>
@@ -84,7 +84,8 @@ const OurStory = () => (
           padding: 0;
         }
         .branch {
-          width: 300px;
+          width: 200px;
+          margin-top: 1rem;
         }
         .eucalyptus {
           display: block;
