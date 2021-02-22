@@ -1,93 +1,60 @@
 import React, { Fragment } from "react";
 import Head from "next/head";
 import Layout from "../components/layout";
-import Hero from "../components/hero";
-import Frame from "../components/frame";
-import Headline from "../components/type/headline";
 import Subhead from "../components/type/subhead";
 import Detail from "../components/type/detail";
-import Vine from "../components/icons/vine";
 
 const Home = () => (
   <Fragment>
     <Head>
-      <link rel="preload" href="/hero-desktop.jpg" as="image"></link>
+      <link rel="preload" href="/hero-bridge.jpg" as="image"></link>
     </Head>
     <Layout title="Bringing Home the Bacon" route="/">
-      <Hero imgUrl="/hero-desktop.jpg" style={{ position: "relative" }}>
-        <div className="hero-text">
-          <Headline>
-            <span className="fade1">Save</span>&nbsp;
-            <span className="fade2">the</span>&nbsp;
-            <span className="fade3">
-              Date
-              <Vine width="80" fill="white" className="vine-icon" />
-            </span>
-          </Headline>
-          <p className="description fadeDown" style={{ marginTop: "1rem" }}>
-            05.29.2021 | Danvers, MA
-          </p>
+      <div
+        className="row center-xs"
+        style={{ paddingTop: "3rem", paddingBottom: "4rem" }}
+      >
+        <div className="col-xs-12 col-md-4 col-sm-offset-1">
+          <Subhead color="peach">Change of Plans!</Subhead>
+          <Detail size="md" color="purple">
+            We're Going Micro
+          </Detail>
+          <Detail size="xs">
+            <br />
+            We hope you and yours are healthy and safe during this time, and we
+            appreciate all the love and support we’ve received from each of you.
+            Although the COVID-19 pandemic has created much uncertainty, we
+            still can't wait to get married on May 29th, 2021, even if it looks
+            a little different than we originally planned.
+            <br />
+            <br />
+            Due to the ongoing pandemic and for everyone's safety, we have made
+            the difficult decision to downsize our wedding. In even the most
+            trying of times, our love is stronger than ever, and something to be
+            celebrated!
+            <br />
+            <br />
+            We will no longer be hosting a large celebration and have opted for
+            an intimate ceremony and backyard gathering to comply with state
+            restrictions. While we wish we could have all our loved ones in
+            attendance, we can't wait to celebrate with everyone in style at a
+            later date.
+            <br />
+            <br />
+          </Detail>
+          <Subhead color="peach">with love,</Subhead>
+          <Detail size="md">Julie & Alex</Detail>
         </div>
-      </Hero>
-      <section className="ceremony grid">
-        <div className="row center-xs">
-          <div className="col-xs-12 col-md-5 ceremony-info">
-            <img
-              src="/eucalyptusbouquet.png"
-              className="eucalyptus"
-              width="150"
-              alt="Eucalyptus bunch"
-            />
-            <Subhead>Ceremony</Subhead>
-            <Detail size="lg" color="purple">
-              4:00 PM
-            </Detail>
-            <Detail size="sm">
-              Glen Magna Farms <br />
-              29 Ingersoll St <br />
-              Danvers, MA 01923
-            </Detail>
-            <a
-              className="map-link"
-              target="_blank"
-              href="https://www.google.com/maps/place/Glen+Magna+Farms/@42.5734774,-70.9688008,17z/data=!3m1!4b1!4m5!3m4!1s0x89e3118fe3ac3f11:0xd66e146dcd974822!8m2!3d42.5734774!4d-70.9666121"
-            >
-              Map
-            </a>
-          </div>
-          <div className="col-sm-12 col-md-5 img-wrapper">
-            <Frame dir="right">
-              <img src="/ceremony.jpg" className="img" />
-            </Frame>
-          </div>
+        <div className="col-xs-12 col-md-6">
+          {" "}
+          <img
+            src="/engagement.jpg"
+            className="engagement"
+            width="500px"
+            style={{ marginBottom: "1rem" }}
+          />
         </div>
-      </section>
-      <section className="reception grid">
-        <div className="row center-xs">
-          <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
-            <Frame dir="left">
-              <img src="/tent.jpg" className="img" />
-            </Frame>
-          </div>
-          <div className="col-sm-12 col-md-5 reception-info">
-            <img
-              src="/eucalyptusbouquet.png"
-              className="eucalyptus"
-              width="150"
-              alt="Eucalyptus bunch"
-            />
-            <Subhead>Reception</Subhead>
-            <Detail size="lg" color="purple">
-              4:30 PM - 10:00 PM
-            </Detail>
-            <Detail size="sm">
-              Dinner and celebrations will continue
-              <br />
-              at the mansion + garden grounds
-            </Detail>
-          </div>
-        </div>
-      </section>
+      </div>
     </Layout>
 
     <style jsx>{`
@@ -109,8 +76,8 @@ const Home = () => (
       .map-link {
         background: linear-gradient(
           to bottom,
-          var(--primary) 0%,
-          var(--primary) 100%
+          var(--peach) 0%,
+          var(--peach) 100%
         );
         background-position: 0 100%;
         background-repeat: repeat-x;

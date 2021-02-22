@@ -12,7 +12,7 @@ const Headline = props => (
       }
       @media only screen and (min-width: 992px) {
         .headline {
-          font-size: 80px;
+          font-size: 60px;
         }
       }
     `}</style>

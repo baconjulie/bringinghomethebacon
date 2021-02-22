@@ -9,10 +9,11 @@
 }
 
 :root {
-  --primary: #88b378;
+  --primary: #d96489;
   --secondary: green;
   --white: #fff;
   --black: #000;
+  --peach: #e78c88;
 }
 
 body {
@@ -94,4 +95,8 @@ body {
 
 .purple {
   color: var(--primary);
+}
+
+.peach {
+  color: var(--peach);
 }

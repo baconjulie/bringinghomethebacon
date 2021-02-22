@@ -12,8 +12,8 @@ const Subhead = props => {
           font-size: 48px;
           font-family: "WildYouth";
         }
-        .purple {
-          color: var(--primary);
+        .peach {
+          color: var(--peach);
         }
       `}</style>
     </Fragment>

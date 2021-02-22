@@ -14,84 +14,102 @@ const Events = () => (
       <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="Getting There" route="/getting-there">
-      <div className="center" style={{ marginBottom: "2rem" }}>
-        <img src="/branch2.png" className="branch" />
+      <div className="center" style={{ margin: "3rem 0" }}>
         <Headline>Getting there</Headline>
+        <img src="/branch2.png" className="branch" />
       </div>
       <section>
         <div className="grid">
-          <div className="row center-xs">
-            <div className="col-sm-12 col-md-6 col-lg-4">
-              <div style={{ marginBottom: "5rem" }}>
+          <div className="row center-xs" style={{ margin: "3rem 0" }}>
+            <div className="col-sm-12 col-md-3">
+              <div>
                 <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
-                <Detail size="md">Courtyard Marriott</Detail>
+                <Detail size="md">907 Main</Detail>
                 <Detail size="xs">
-                  275 Independence Way
+                  907 Main St
                   <br />
-                  Danvers, MA 01923
-                  <br />
-                  <br />
-                  <a
-                    href="https://www.marriott.com/hotels/travel/bosdv-courtyard-boston-danvers/"
-                    className="link"
-                  >
-                    Hotel website
-                  </a>
-                  <br />
-                  <br />
-                  We've secured a group rate for a hotel block for both Friday
-                  and Saturday evening. Tell them you're with the{" "}
-                  <i>~Arsenault Wedding~</i> when booking!
-                  <br />
-                  <br />
-                  Marriott is taking&nbsp;
-                  <a href="https://clean.marriott.com/" className="link">
-                    extra precautions
-                  </a>{" "}
-                  when it comes to health and safety during these times.
-                </Detail>
-              </div>
-              <div style={{ marginBottom: "5rem" }}>
-                <Plane width="100px" />
-                <Subhead color="purple">Travel</Subhead>
-                <Detail size="md">Airport</Detail>
-                <Detail size="xs">
-                  Out of town guests can fly into{" "}
-                  <a
-                    href="http://www.massport.com/logan-airport/"
-                    target="_blank"
-                    className="link"
-                  >
-                    Boston Logan Airport
-                  </a>
-                  . Danvers is about a 30 minute drive from the airport via ride
-                  share or rental car.
-                </Detail>
-                <div style={{ paddingTop: "2rem" }}>
-                  <Detail size="md">Taxis and Rentals</Detail>
-                  <Detail size="xs">
-                    {" "}
-                    Taxis, ubers and rental cars are easily accessible from
-                    Logan Airport to get you to and from Danvers. Guests will
-                    drive themselves to and from our wedding to maintain social
-                    distancing.
-                  </Detail>
-                </div>
-              </div>
-              <div>
-                <Cheers width="110px" />
-                <Subhead color="purple">Things to Do!</Subhead>
-                <Detail size="xs">
-                  Boston has a very special place in our hearts. If you find you
-                  have some extra time to explore the area, we recommend you
-                  enjoy safe, socially distant activities in Boston. Stroll the
-                  Boston Public Gardens, walk along the Seaport, dine al fresco
-                  like a true Italian in the North End, and unwind at Trade
-                  Boston (our first date spot!)
+                  Cambridge, MA 02139
                 </Detail>
               </div>
             </div>
+            <div className="col-sm-12 col-md-3 align-center">
+              <Detail size="xs">
+                We've secured a group rate for a hotel block for both Friday and
+                Saturday evening for any guests interested. Tell them you're
+                with the <i>~Arsenault Wedding~</i> when booking.{" "}
+                <a href="https://www.907main.com/" className="link">
+                  Hotel website
+                </a>
+                <br />
+                <br />
+                907 Main is taking extra precautions when it comes to health and
+                safety.
+              </Detail>
+              <br />
+            </div>
+          </div>
+        </div>
+        <div className="center">
+          <img src="/branch2.png" className="small-branch" />
+        </div>
+        <div className="row center-xs" style={{ margin: "3rem 0" }}>
+          <div className="col-sm-12 col-md-3">
+            <div>
+              <Plane width="100px" />
+              <Subhead color="purple">Travel</Subhead>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-3 align-center">
+            <div>
+              <Detail size="xs">
+                Out of town guests can fly into
+                <br />
+                <a
+                  href="http://www.massport.com/logan-airport/"
+                  target="_blank"
+                  className="link"
+                >
+                  Boston Logan Airport
+                </a>
+                .
+              </Detail>
+              <Detail size="xs">
+                <br />
+                Guests will drive themselves to and from our wedding to maintain
+                social distancing. Rental cars and ubers are readily available
+                from Logan Airport for out of town guests.
+              </Detail>
+            </div>
+          </div>
+        </div>
+        <div className="center">
+          <img src="/branch2.png" className="small-branch-right" />
+        </div>
+        <div className="row center-xs" style={{ margin: "3rem 0" }}>
+          <div className="col-sm-12 col-md-3">
+            <Cheers width="110px" />
+            <Subhead color="purple">Safety First!</Subhead>
+          </div>
+          <div className="col-sm-12 col-md-3 align-center">
+            <Detail size="xs">
+              In an effort to keep our intimate wedding as safe as possible, we
+              will be providing all guests masks, hand sanitizer, and keeping
+              events outdoors. We kindly ask that each guest quarantine for 14
+              days or get a negative covid-19 test within 3 days before the
+              wedding. There are a variety of{" "}
+              <a
+                href="https://www.solvhealth.com/ma/c/cambridge-ma-srv-covid-testing"
+                target="_blank"
+                className="link"
+              >
+                testing sites
+              </a>{" "}
+              in the area. <br />
+              <br />
+              Please don't hesitate to reach out to us if you need help finding
+              a testing site.
+            </Detail>
           </div>
         </div>
       </section>
@@ -101,6 +119,10 @@ const Events = () => (
         .img {
           max-width: 100%;
         }
+        .align-center {
+          display: flex;
+          align-items: center;
+        }
         .center {
           text-align: center;
         }
@@ -109,12 +131,21 @@ const Events = () => (
         }
         .branch {
           width: 200px;
+          margin-top: 1rem;
+        }
+        .small-branch {
+          width: 150px;
+          transform: rotate(-25deg);
+        }
+        .small-branch-right {
+          width: 150px;
+          transform: rotate(25deg);
         }
         .link {
           background: linear-gradient(
             to bottom,
-            var(--primary) 0%,
-            var(--primary) 100%
+            var(--peach) 0%,
+            var(--peach) 100%
           );
           background-position: 0 100%;
           background-repeat: repeat-x;
@@ -131,7 +162,7 @@ const Events = () => (
         }
         @media only screen and (min-width: 992px) {
           .branch {
-            width: 300px;
+            width: 200px;
           }
         }
       `}

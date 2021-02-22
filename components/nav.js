@@ -12,10 +12,10 @@ const Nav = props => {
   };
 
   const links = [
-    { href: "/", label: "Wedding" },
+    { href: "/", label: "Home" },
+    { href: "/the-wedding", label: "The Wedding" },
     { href: "/getting-there", label: "Getting There" },
     { href: "/our-story", label: "Our Story" },
-    { href: "/covid-update", label: "Covid Update" },
     {
       href:
         "https://www.crateandbarrel.com/gift-registry/julie-bacon-and-alex-arsenault/r6148393",
@@ -32,9 +32,8 @@ const Nav = props => {
         <Menu isActive={isActive} />
       </div>
       <nav>
-        <a href="/" className="names">
-          <span className="julie">J</span>
-          <span className="ampersand">&</span>A
+        <a href="/">
+          <img src="/logonew.png" />
         </a>
         <ul>
           {links.map(({ key, href, label }) => (
@@ -62,15 +61,17 @@ const Nav = props => {
           :global(body) {
             margin: 0;
             font-family: "Raleway", Avenir Next, Avenir, Helvetica, sans-serif;
-            --primary: #9e6381;
+            --primary: #a20f3a;
             --secondary: #b785a9;
             --tertiary: #673046;
             --white: #fff;
             --black: #000;
+            --peach: #e78c88;
           }
           nav {
             background-color: var(--white);
             padding: 0.5rem;
+            padding-top: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -81,15 +82,6 @@ const Nav = props => {
             font-family: "WildYouth";
             font-size: 45px;
             letter-spacing: 2px;
-          }
-          .julie {
-            font-size: 35px;
-            font-weight: bold;
-          }
-          .ampersand {
-            color: var(--primary);
-            font-family: "AbrilFatFace";
-            font-size: 35px;
           }
           nav ul {
             display: none;
@@ -118,7 +110,7 @@ const Nav = props => {
           li:hover:after,
           li.current:after {
             width: 100%;
-            background: var(--primary);
+            background: var(--peach);
           }
           a {
             color: black;
