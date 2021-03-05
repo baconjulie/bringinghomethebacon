@@ -25,26 +25,19 @@ const Events = () => (
               <div>
                 <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
-                <Detail size="md">907 Main</Detail>
+                <Detail size="md">TBD</Detail>
                 <Detail size="xs">
-                  907 Main St
+                  We will be providing hotel options
                   <br />
-                  Cambridge, MA 02139
+                  within the next week! Check back here soon!
                 </Detail>
               </div>
             </div>
             <div className="col-sm-12 col-md-3 align-center">
               <Detail size="xs">
-                We've secured a group rate for a hotel block for both Friday and
-                Saturday evening for any guests interested. Tell them you're
-                with the <i>~Arsenault Wedding~</i> when booking.{" "}
-                <a href="https://www.907main.com/" className="link">
-                  Hotel website
-                </a>
-                <br />
-                <br />
-                907 Main is taking extra precautions when it comes to health and
-                safety.
+                We're securing a group rate for a hotel block for both Friday
+                and Saturday evening for any guests interested. Tell them you're
+                with the <i>~Arsenault Wedding~</i> when booking.
               </Detail>
               <br />
             </div>
