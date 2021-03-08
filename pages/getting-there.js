@@ -102,9 +102,9 @@ const Events = () => (
             <Detail size="xs">
               In an effort to keep our intimate wedding as safe as possible, we
               will be providing all guests masks, hand sanitizer, and keeping
-              events outdoors. We kindly ask that each guest quarantine for 14
-              days or get a negative covid-19 test within 3 days before the
-              wedding. There are a variety of{" "}
+              events outdoors. We kindly ask that each non-vaccinated guest
+              quarantine for 14 days or get a negative covid-19 test within 3
+              days before the wedding. There are a variety of{" "}
               <a
                 href="https://www.solvhealth.com/ma/c/cambridge-ma-srv-covid-testing"
                 target="_blank"
