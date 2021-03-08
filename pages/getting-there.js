@@ -25,19 +25,33 @@ const Events = () => (
               <div>
                 <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
-                <Detail size="md">TBD</Detail>
+                <Detail size="md">Hilton Boston/Dedham</Detail>
                 <Detail size="xs">
-                  We will be providing hotel options
+                  25 Allied Dr
                   <br />
-                  within the next week! Check back here soon!
+                  Dedham, MA 02026
                 </Detail>
               </div>
             </div>
             <div className="col-sm-12 col-md-3 align-center">
               <Detail size="xs">
-                We're securing a group rate for a hotel block for both Friday
-                and Saturday evening for any guests interested. Tell them you're
+                We've secured a group rate for a hotel block for both Friday and
+                Saturday evening for any guests interested. Tell them you're
                 with the <i>~Arsenault Wedding~</i> when booking.
+                <a href="" className="link" target="_blank">
+                  Booking Code
+                </a>
+                <br />
+                <br />
+                Hilton is taking extra cleaning & safety{" "}
+                <a
+                  href="https://www.hilton.com/en/corporate/cleanstay/"
+                  className="link"
+                  target="_blank"
+                >
+                  precautions
+                </a>{" "}
+                to ensure the wellbeing of guests.
               </Detail>
               <br />
             </div>
