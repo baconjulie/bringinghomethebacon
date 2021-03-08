@@ -18,8 +18,9 @@ const TheWedding = () => (
         <img src="/branch2.png" className="branch" />
         <br />
         <br />
-        We could not be more grateful to spend an intimate evening celebrating
-        our love with friends and family.
+        We could not be more grateful to spend an intimate
+        <br />
+        evening celebrating our love with friends and family.
         <br />
         <br />
       </div>
