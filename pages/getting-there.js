@@ -37,9 +37,13 @@ const Events = () => (
               <Detail size="xs">
                 We've secured a group rate for a hotel block for both Friday and
                 Saturday evening for any guests interested. Tell them you're
-                with the <i>~Arsenault Wedding~</i> when booking.
-                <a href="" className="link" target="_blank">
-                  Booking Code
+                with the <i>~Arsenault Wedding~</i> when booking.{" "}
+                <a
+                  href="https://www.hilton.com/en/hotels/ddhdhhf-hilton-boston-dedham/"
+                  className="link"
+                  target="_blank"
+                >
+                  Hotel Website
                 </a>
                 <br />
                 <br />
