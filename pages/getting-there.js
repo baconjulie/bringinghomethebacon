@@ -25,19 +25,37 @@ const Events = () => (
               <div>
                 <Hotel width="90px" />
                 <Subhead color="purple">Hotel</Subhead>
-                <Detail size="md">TBD</Detail>
+                <Detail size="md">Hilton Boston/Dedham</Detail>
                 <Detail size="xs">
-                  We will be providing hotel options
+                  25 Allied Dr
                   <br />
-                  within the next week! Check back here soon!
+                  Dedham, MA 02026
                 </Detail>
               </div>
             </div>
             <div className="col-sm-12 col-md-3 align-center">
               <Detail size="xs">
-                We're securing a group rate for a hotel block for both Friday
-                and Saturday evening for any guests interested. Tell them you're
-                with the <i>~Arsenault Wedding~</i> when booking.
+                We've secured a group rate for a hotel block for both Friday and
+                Saturday evening for any guests interested. Tell them you're
+                with the <i>~Arsenault Wedding~</i> when booking.{" "}
+                <a
+                  href="https://www.hilton.com/en/hotels/ddhdhhf-hilton-boston-dedham/"
+                  className="link"
+                  target="_blank"
+                >
+                  Hotel Website
+                </a>
+                <br />
+                <br />
+                Hilton is taking extra cleaning & safety{" "}
+                <a
+                  href="https://www.hilton.com/en/corporate/cleanstay/"
+                  className="link"
+                  target="_blank"
+                >
+                  precautions
+                </a>{" "}
+                to ensure the wellbeing of guests.
               </Detail>
               <br />
             </div>
@@ -88,9 +106,9 @@ const Events = () => (
             <Detail size="xs">
               In an effort to keep our intimate wedding as safe as possible, we
               will be providing all guests masks, hand sanitizer, and keeping
-              events outdoors. We kindly ask that each guest quarantine for 14
-              days or get a negative covid-19 test within 3 days before the
-              wedding. There are a variety of{" "}
+              events outdoors. We kindly ask that each non-vaccinated guest
+              quarantine for 14 days or get a negative covid-19 test within 3
+              days before the wedding. There are a variety of{" "}
               <a
                 href="https://www.solvhealth.com/ma/c/cambridge-ma-srv-covid-testing"
                 target="_blank"
