@@ -24,10 +24,12 @@ const TheWedding = () => (
         <br />
         <br />
         <div className="desc">
-          In classic Pandemic fashion, we changed our venue (last time we
-          swear!). Both the ceremony and reception will be held outdoors at The
-          Endicott Estate in Dedham, as it is a more spacious and convenient
-          location. Updated invites coming soon :)
+          In classic pandemic fashion, we changed our venue (for the last time,
+          we swear!). Both the ceremony and reception will be held outdoors at{" "}
+          <b>The Endicott Estate</b> in Dedham, as it is a more spacious and
+          convenient location. Updated invites coming soon :) We will assume
+          your original RSVP response is still valid, but please let us know if
+          this has changed.
         </div>
       </div>
       <section className="ceremony grid">
