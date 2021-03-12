@@ -23,6 +23,9 @@ const TheWedding = () => (
         evening celebrating our love with friends and family.
         <br />
         <br />
+        We lucked out with an opening at The Endicott Estate in Dedham. Both the
+        ceremony and reception will now be held here as it is a more spacious
+        and convenient location. Updated invites coming soon :)
       </div>
       <section className="ceremony grid">
         <div className="row center-xs">
