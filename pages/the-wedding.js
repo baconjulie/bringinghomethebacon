@@ -23,10 +23,12 @@ const TheWedding = () => (
         evening celebrating our love with friends and family.
         <br />
         <br />
-        In classic Pandemic fashion, we changed our venue (last time we swear!).
-        Both the ceremony and reception will be held outdoors at The Endicott
-        Estate in Dedham, as it is a more spacious and convenient location.
-        Updated invites coming soon :)
+        <div className="desc">
+          In classic Pandemic fashion, we changed our venue (last time we
+          swear!). Both the ceremony and reception will be held outdoors at The
+          Endicott Estate in Dedham, as it is a more spacious and convenient
+          location. Updated invites coming soon :)
+        </div>
       </div>
       <section className="ceremony grid">
         <div className="row center-xs">
@@ -158,6 +160,9 @@ const TheWedding = () => (
         @media only screen and (min-width: 992px) {
           .branch {
             width: 200px;
+          }
+          .desc {
+            max-width: 60%;
           }
         }
       `}
