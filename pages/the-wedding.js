@@ -12,15 +12,22 @@ const TheWedding = () => (
       <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="The Wedding" route="/the-wedding">
-      <div className="center" style={{ margin: "3rem 0" }}>
+      <div
+        className="center"
+        style={{
+          margin: "3rem 0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "ceneter"
+        }}
+      >
         <div className="label">Please join us for our an</div>
         <Headline>Intimate Wedding</Headline>
         <img src="/branch2.png" className="branch" />
         <br />
         <br />
-        We could not be more grateful to spend an intimate
-        <br />
-        evening celebrating our love with friends and family.
+        We could not be more grateful to spend an intimate evening celebrating
+        our love with friends and family.
         <br />
         <br />
         <div className="desc">
