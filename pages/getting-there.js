@@ -37,14 +37,15 @@ const Events = () => (
               <Detail size="xs">
                 We've secured a group rate for a hotel block for both Friday and
                 Saturday evening for any guests interested. Tell them you're
-                with the <i>~Arsenault Wedding~</i> when booking.{" "}
+                with the <i>~Arsenault Wedding~</i> when booking or use our{" "}
                 <a
-                  href="https://www.hilton.com/en/hotels/ddhdhhf-hilton-boston-dedham/"
+                  href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.hilton.com%2Fen%2Fbook%2Freservation%2Fdeeplink%2F%3F%26ctyhocn%3DDDHDHHF%26groupCode%3DBAW%26arrival%3D20210528%26departure%3D20210530%26cid%3DOM%2CWW%2CHILTONLINK%2Cen%2CDirectLink%26fromId%3DHILTONLINKDIRECT&data=04%7C01%7Cgrace.alexander%40hilton.com%7Ca5aef7128baa48f82def08d8e58b56cf%7C660292d2cfd54a3db7a7e8f7ee458a0a%7C0%7C0%7C637511734421349545%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=gI0z1DAYxzzzClEnUi2xumn5Fw%2Fy%2BUpVAcNy63%2BsrEg%3D&reserved=0"
                   className="link"
                   target="_blank"
                 >
-                  Hotel Website
+                  booking link
                 </a>
+                .
                 <br />
                 <br />
                 Hilton is taking extra cleaning & safety{" "}

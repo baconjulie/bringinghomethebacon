@@ -18,7 +18,7 @@ const TheWedding = () => (
           margin: "3rem 0",
           display: "flex",
           flexDirection: "column",
-          alignItems: "ceneter"
+          alignItems: "center"
         }}
       >
         <div className="label">Please join us for our an</div>
