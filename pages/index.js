@@ -33,7 +33,6 @@ const Home = () => (
             trying of times, our love is stronger than ever, and something to be
             celebrated!
             <br />
-            <br />
             At this time, we will no longer be hosting a large celebration and
             have opted for an intimate ceremony and reception. While we wish we
             could have all our loved ones in attendance, we can't wait to

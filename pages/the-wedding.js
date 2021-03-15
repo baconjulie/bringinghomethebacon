@@ -12,10 +12,32 @@ const TheWedding = () => (
       <link rel="preload" href="/branch2.png" as="image"></link>
     </Head>
     <Layout title="The Wedding" route="/the-wedding">
-      <div className="center" style={{ margin: "3rem 0" }}>
+      <div
+        className="center"
+        style={{
+          margin: "3rem 0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "ceneter"
+        }}
+      >
         <div className="label">Please join us for our an</div>
         <Headline>Intimate Wedding</Headline>
         <img src="/branch2.png" className="branch" />
+        <br />
+        <br />
+        We could not be more grateful to spend an intimate evening celebrating
+        our love with friends and family.
+        <br />
+        <br />
+        <div className="desc">
+          In classic pandemic fashion, we changed our venue (for the last time,
+          we swear!). Both the ceremony and reception will be held outdoors at{" "}
+          <b>The Endicott Estate</b> in Dedham, as it is a more spacious and
+          convenient location. Updated invites coming soon :) We will assume
+          your original RSVP response is still valid, but please let us know if
+          this has changed.
+        </div>
       </div>
       <section className="ceremony grid">
         <div className="row center-xs">
@@ -28,28 +50,25 @@ const TheWedding = () => (
             />
             <Subhead>Ceremony</Subhead>
             <Detail size="lg" color="purple">
-              11:00 AM
+              4:00 PM
             </Detail>
             <Detail size="sm">
-              Oleana <br />
-              134 Hampshire St
+              Endicott Estate <br />
+              656 East St
               <br />
-              Cambridge, MA 02139
-              <br />
-              <br />
-              Lunch + Celebration to follow
+              Dedham, MA 02026
             </Detail>
             <a
               className="map-link"
               target="_blank"
-              href="https://www.google.com/maps/place/Oleana/@42.3705494,-71.0971859,15z/data=!4m5!3m4!1s0x0:0xae84228b09fd944f!8m2!3d42.3705494!4d-71.0971859"
+              href="https://www.google.com/maps/place/Endicott+Estate/@42.2394849,-71.1636504,15z/data=!4m5!3m4!1s0x0:0x13b84f411eda0ada!8m2!3d42.2394849!4d-71.1636504"
             >
               Map
             </a>
           </div>
           <div className="col-sm-12 col-md-5 img-wrapper">
             <Frame dir="right">
-              <img src="/oleana.png" className="img" />
+              <img src="/ee-ceremony.png" className="img" />
             </Frame>
           </div>
         </div>
@@ -58,7 +77,7 @@ const TheWedding = () => (
         <div className="row center-xs">
           <div className="col-sm-12 col-md-5 last-xs first-md img-wrapper">
             <Frame dir="left">
-              <img src="/backyard.png" className="img" />
+              <img src="/ee-reception.png" className="img" />
             </Frame>
           </div>
           <div className="col-sm-12 col-md-5 reception-info">
@@ -68,26 +87,21 @@ const TheWedding = () => (
               width="150"
               alt="Eucalyptus bunch"
             />
-            <Subhead>After Party</Subhead>
+            <Subhead>Celebration</Subhead>
             <Detail size="lg" color="purple">
-              4:00 PM
+              4:30 PM
             </Detail>
             <Detail size="sm">
-              36 Longfellow Road
+              Cocktail hour, dinner and celebrations will
               <br />
-              Norwood, MA 02062
-              <br />
-              <br />
-              Drinks, dinner and celebrations will
-              <br />
-              continue safely at the backyard after-party
+              continue safely on the Endicott Estate veranda.
             </Detail>
             <a
               className="map-link"
               target="_blank"
-              href="https://www.google.com/maps/place/36+Longfellow+Rd,+Norwood,+MA+02062/@42.1878565,-71.2170089,17z/data=!3m1!4b1!4m5!3m4!1s0x89e47e35465274e9:0x622a09c6fd475e2d!8m2!3d42.1878565!4d-71.2148202"
+              href="https://www.endicottestate.com/about"
             >
-              Map
+              About the Estate
             </a>
           </div>
         </div>
@@ -155,6 +169,9 @@ const TheWedding = () => (
         @media only screen and (min-width: 992px) {
           .branch {
             width: 200px;
+          }
+          .desc {
+            max-width: 60%;
           }
         }
       `}
