@@ -24,19 +24,15 @@ const TheWedding = () => (
         <div className="label">Please join us for our an</div>
         <Headline>Intimate Wedding</Headline>
         <img src="/branch2.png" className="branch" />
-        <br />
-        <br />
+        <div className="desc">
         We could not be more grateful to spend an intimate evening celebrating
         our love with friends and family.
         <br />
         <br />
-        <div className="desc">
           In classic pandemic fashion, we changed our venue (for the last time,
           we swear!). Both the ceremony and reception will be held outdoors at{" "}
           <b>The Endicott Estate</b> in Dedham, as it is a more spacious and
-          convenient location. Updated invites coming soon :) We will assume
-          your original RSVP response is still valid, but please let us know if
-          this has changed.
+          convenient location.
         </div>
       </div>
       <section className="ceremony grid">
@@ -50,7 +46,7 @@ const TheWedding = () => (
             />
             <Subhead>Ceremony</Subhead>
             <Detail size="lg" color="purple">
-              4:00 PM
+              4:30 PM
             </Detail>
             <Detail size="sm">
               Endicott Estate <br />
@@ -89,7 +85,7 @@ const TheWedding = () => (
             />
             <Subhead>Celebration</Subhead>
             <Detail size="lg" color="purple">
-              4:30 PM
+              5:00 PM
             </Detail>
             <Detail size="sm">
               Cocktail hour, dinner and celebrations will
@@ -106,6 +102,27 @@ const TheWedding = () => (
           </div>
         </div>
       </section>
+      <div
+        className="center"
+        style={{
+          margin: "10rem 0",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center"
+        }}
+      >
+        <div className="label">JOIN US THE FOLLOWING DAY FOR A</div>
+        <Headline>Backyard Barbecue</Headline>
+        <img src="/branch2.png" className="branch" />
+        <div className="desc">
+        For guests who will be around on Sunday, we'll be hosting a casual backyard BBQ. Come grab a burger and a beer with us!
+        <br />
+        <br />
+          1:00 P.M.
+          36 Longfelow Road<br/>
+          Norwood, MA 02062
+      </div>
+      </div>
     </Layout>
     <style jsx>
       {`
@@ -166,12 +183,18 @@ const TheWedding = () => (
         .link:hover {
           background-size: 4px 50px;
         }
+        .desc {
+          font-size: 18px;
+          line-height: 1.2;
+          padding: 16px;
+        }
         @media only screen and (min-width: 992px) {
           .branch {
             width: 200px;
           }
           .desc {
-            max-width: 60%;
+            max-width: 600px;
+            font-size: 20px;
           }
         }
       `}
